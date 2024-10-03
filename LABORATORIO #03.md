@@ -31,6 +31,17 @@ Donde 𝐼0 es la corriente en un punto de la fibra, 𝜎 es la conductividad de
 
 ---
 **4.Procedimiento, Desarrollo y Análisis:**
+**¿Qué es la Técnica de Electromiográfia (EMG)?**
+La electromiografía (EMG) es una prueba médica que permite evaluar la salud de los músculos y los nervios que los controlan. Esta técnica consiste en registrar la actividad eléctrica que genera los músculos, tanto en reposo como durante la contracción. 
+
+![image](https://github.com/user-attachments/assets/f0fd69e1-e9a6-4a96-9010-560b07003865)
+**Figura #02.Principio de la electromiografía (EMG). Extraida de Cleveland**
+
+
+
+
+
+
 
 **4.1 Preparación del Sujeto:** Antes de comenzar el registro de señales electromiográficas (EMG), es crucial preparar adecuadamente al sujeto para garantizar la calidad de los datos obtenidos. Esta etapa incluye una serie de paso a paso que se muestra acontinuación:
 
@@ -41,3 +52,6 @@ Donde 𝐼0 es la corriente en un punto de la fibra, 𝜎 es la conductividad de
 * **Fijación:** Los electrodos se fijan a la piel con cinta adhesiva o gel conductor para asegurar un buen contacto eléctrico.
 
 **Nota Importante:** La preparación del paciente es un aspecto fundamental para garantizar la calidad de los datos obtenidos en una EMG. Un buen protocolo de preparación minimizará el ruido y las interferencias en la señal, lo que permitirá obtener resultados más precisos y confiables.
+
+Ballesteros en su tesis "Diseño de una plataforma multicanal para el registro de señales EMG"[6]expone los primeros pasos para lograr la adquisición de señales electromiográficas del musculo desde alternativas de fácil acondicionamiento que permita conocer información relevante y automatizada de la señal respecto al tiempo de prueba, de la forma en como se origina y el tipo de clasificación y cuantificación que esta conlleva para obtener el resultado.
+**4.2 Sistema de Adquisición de Datos DAQ:**
