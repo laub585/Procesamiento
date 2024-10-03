@@ -30,9 +30,14 @@ Donde 𝐼0 es la corriente en un punto de la fibra, 𝜎 es la conductividad de
 ![image](https://github.com/user-attachments/assets/f7ec16b9-11f2-4679-9a20-96460996192d)
 
 ---
+**4.Procedimiento, Desarrollo y Análisis:**
 
+**4.1 Preparación del Sujeto:** Antes de comenzar el registro de señales electromiográficas (EMG), es crucial preparar adecuadamente al sujeto para garantizar la calidad de los datos obtenidos. Esta etapa incluye una serie de paso a paso que se muestra acontinuación:
 
+* **Limpieza de la piel:** La piel se limpia con alcohol para eliminar suciedad que puedan interferir con la señal.
 
+* **Colocación de electrodos:** Los electrodos se colocan sobre la piel de acuerdo a la ubicación de los músculos a evaluar. La posición de los electrodos es crucial para obtener una señal de calidad.
+  
+* **Fijación:** Los electrodos se fijan a la piel con cinta adhesiva o gel conductor para asegurar un buen contacto eléctrico.
 
-
-**3.1 
+**Nota Importante:** La preparación del paciente es un aspecto fundamental para garantizar la calidad de los datos obtenidos en una EMG. Un buen protocolo de preparación minimizará el ruido y las interferencias en la señal, lo que permitirá obtener resultados más precisos y confiables.
