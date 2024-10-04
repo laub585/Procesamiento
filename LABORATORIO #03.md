@@ -41,7 +41,9 @@ La electromiografía (EMG) es una prueba médica que permite evaluar la salud de
 
 Para desarrollar la técnica en mención, se tienen en cuenta los siguientes factores que resultan importantes para los resultados:
 
-**4.1 Preparación del Sujeto:** Antes de comenzar el registro de señales electromiográficas (EMG), es crucial preparar adecuadamente al sujeto para garantizar la calidad de los datos obtenidos. Esta etapa incluye una serie de paso a paso que se muestra acontinuación:
+**4.1 Preparación del Sujeto:** 
+
+Antes de comenzar el registro de señales electromiográficas (EMG), es crucial preparar adecuadamente al sujeto para garantizar la calidad de los datos obtenidos. Esta etapa incluye una serie de paso a paso que se muestra acontinuación:
 
 * **Limpieza de la piel:** La piel se limpia con alcohol para eliminar suciedad que puedan interferir con la señal.
 
@@ -105,7 +107,8 @@ En el caso del bíceps, si la señal EMG tiene componentes de frecuencia de hast
 Esto significa que la frecuencia de muestreo mínima recomendada para capturar adecuadamente la señal EMG del músculo bíceps es de 1000 Hz.
   
 **4.4 Registro de la señal Electromiográfica EMG:**
-Para el registro de la señal Electromiográfica, En este sistema, se captura la actividad eléctrica muscular (EMG) de manera continua a lo largo de toda la prueba. Esta señal biológica es adquirida por la STM32 y los datos recolectados son enviados en tiempo real a una interfaz gráfica desarrollada en Python utilizando Qt Designer. Esta interfaz visual permite al usuario observar instantáneamente las variaciones en la señal EMG, facilitando así el análisis y la interpretación de los resultados durante el experimento.
+
+Para el registro de la señal Electromiográfica, se captura la actividad eléctrica muscular (EMG) de manera continua a lo largo de toda la prueba. Esta señal biológica es adquirida por la STM32 y los datos recolectados son enviados en tiempo real a una interfaz gráfica desarrollada en Python utilizando Qt Designer. Esta interfaz visual permite al usuario observar instantáneamente las variaciones en la señal EMG, facilitando así el análisis y la interpretación de los resultados durante el experimento.
 
 A continuación, se muestra una parte del codigo de la STM32, donde se implementa un sistema básico de adquisición de señales EMG. En este apartado, se configuran varios periféricos que se encarga de registrar datos del sensor mediante un ADC (Convertidor Analógico-Digital) y transmitirlos a través de USB utilizando la clase CDC (Communication Device Class). Se definen variables para manejar el ADC, DMA y un temporizador, que genera interrupciones a intervalos definidos y asi se envía periódicamente a una computadora a través de una interfaz de comunicación realizada por Q- designer.
 
@@ -113,8 +116,19 @@ A continuación, se muestra una parte del codigo de la STM32, donde se implement
 
 **Figura #07.Programación de la STM32. Elaboración propia**
 
+Estos datos de la señal EMG, adquiridos por la STM32 se procesan en tiempo real y como se decia anteriormente son enviados a una interfaz gráfica desarrollada mediante el lenguaje de  Python se encarga de visualizarlos. Esta interfaz, creada con la librería PyQt, presenta la señal EMG en forma de una gráfica que se actualiza constantemente, permitiendo al monitorear la actividad muscular durante la contracción muscular hasta que llega a fatigarse.
+
+Para comprender mas la señal en la interfaz, se debe entender que la fatiga muscular es una respuesta natural del cuerpo a un esfuerzo físico prolongado o intenso, lo que permitiria visualizar en la toma de la señal son los puntos de contracción de manera más ruidosa, con la aparición de componentes de baja frecuencia y un aumento en la variabilidad de la señal.
 
 
 
+**Figura #08. Interfaz realizada por Q-Designer. Elaboración propia**
+
+![image](https://github.com/user-attachments/assets/dc538107-6fbc-42ab-927f-9b93760bb08b)
+
+**Figura #09.Señal EMG Secuencia Contracción Relajación . Extraida de Literatura**
+
+
+**Figura #10.Señal EMG Obtenida Por Sistema de Adquisición en Interfaz Q- Designer . Elaboración Propia**
 
 
