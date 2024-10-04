@@ -193,6 +193,13 @@ La función de la transformada de Fourier, permite identificar las frecuencias d
 
 **Figura #16. Frecuencia de Ventanas EMG con FFT . Elaboración Propia**
 
+**4.8 Cambio del espectro de la señal en cada ventana conforme se acerca la fatiga muscular**
+
+**Evaluación de la disminución de la frecuencia mediana en cada ventana como indicador de la fatiga**
+
+**Implementación de  una prueba de hipótesis para verificar si el cambio en la mediana es significativo estadísticamente:**
+
+
 **5. Análisis de Datos**
 
 Para el análisis de datos, en primer lugar se logra comprender como la tecnica de la electromiografía (EMG) es una herramienta indispensable para evaluar la función del bíceps y otros músculos. Al medir la actividad eléctrica generada durante la contracción muscular, la EMG permite obtener información precisa sobre la fuerza de contracción, la fatiga muscular, lo que nos permite analizar directamente que la señal obtenida  mediante EMG sin filtrar tiene gran cantidad de ruido de alta frecuencia que dificulta la identificación clara de los eventos musculares de contracción y relajación, presentando fluctuaciones de amplitud que en su mayoría no corresponden a actividad muscular real. Este ruido puede ser causado por interferencias externas de los electrodos o del medio, lo que enmascara los patrones relevantes de la señal. Al aplicar un filtrado Butterworth, el ruido se reduce considerablemente, lo que permite visualizar la señal de manera más limpia y estructurada, facilitando la detección de eventos musculares importantes en nuestro caso de estudio contracciones o activaciones que generaban fatiga en el musculo. Sin embargo, el filtrado también puedo haber eliminado componentes de alta frecuencia que podrían contener información útil sobre la información adquirida de los movimientos rápidos, lo que resalta la importancia de ajustar el filtro.
@@ -201,7 +208,9 @@ Otro factor que es importante fue el sistema de adquisición de datos (DAQ) ya q
 
 En cuanto al proceso de filtrado, el uso del filtro Butterworth se hizo con el proposito de  eliminar el ruido y las interferencias que pueden contaminar la señal original, permitiendo así obtener una señal más limpia y precisa, Al suavizar la respuesta en frecuencia, este filtro permite aislar la información relevante de la actividad muscular, mejorando significativamente la calidad de la señal que fue mejorado un poco despues se aplica  el uso de la tecnica de aventamiento con la teçnica  de Hanning a la señal. Esta ventana suaviza las discontinuidades en los extremos de los segmentos de datos, enfatizando los componentes centrales que corresponden a los potenciales de acción musculares tras la fatiga del musculo y asi poder reducir las fugas espectrales y mejorar la resolución frecuencial que facilito la identificación de las diferentes componentes de frecuencia presentes en la señal EMG
 
-El análisis para las graficas # - #
+El análisis para las graficas #13 - #14 evidencia el cambio entre la señal filtrada con Butterworth ya que esta exhibe una forma de onda más limpia y regular, pero aún presenta algunas discontinuidades y fugas espectrales y el ventaneo de hannig que al ser aplicado la ventana de Hanning, se observa una mejora significativa en la suavidad de la señal y una reducción de las discontinuidades en los bordes de cada segmento. Esto se traduce en una estimación del espectro un poco más preciso, lo que facilita la identificación de las diferentes componentes de frecuencia presentes en la señal EMG.
+
+Con lo anterior, se puede analizar que el espectro de potencia obtenido a través de la Transformada Rápida de Fourier (FFT) nos brinda una representación detallada de la composición frecuencial de la señal del musculo biceps, muestra cómo la potencia se distribuye a lo largo de distintas frecuencias. En las frecuencias bajas (<100 Hz), se observan picos significativos que representan la actividad muscular, ya que la mayor parte de la información útil en una señal EMG se encuentra en el rango de 10-150 Hz. Sin embargo, destaca un pico fuerte alrededor de los 400 Hz, que probablemente sea un artefacto o interferencia, como ruido eléctrico, que no fue completamente eliminado durante el filtrado. Después de los 100 Hz, la potencia disminuye rápidamente, lo que indica que las altas frecuencias no deseadas han sido en gran parte eliminadas, salvo por el pico en los 400 Hz, que es el resultado de descomponer la señal en sus componentes de frecuencia.
 
 El análisis de las 37 ventanas de señal EMG revela una variabilidad considerable en las frecuencias dominantes y medianas, sugiriendo una actividad muscular dinámica y cambiante. La alta desviación estándar en muchas ventanas indica una amplia distribución de frecuencias, posiblemente debido a la presencia de diferentes tipos de fibras musculares o a ruido en la señal. Los valores atípicos en la frecuencia dominante podrían indicar eventos transitorios o artefactos. En general, los resultados sugieren una actividad muscular de baja intensidad con momentos de mayor activación. Sin embargo, para una interpretación más precisa, se requiere un análisis más profundo considerando el contexto experimental y el tipo de músculo estudiado.
 
@@ -216,4 +225,5 @@ El análisis de las 37 ventanas de señal EMG revela una variabilidad considerab
 
 **7. Bibliografía**
 [1]. 
-[2]. 
+[2]. Miyara, F. (2004). Filtros activos. Cátedra de Electrónica III FCEIA-UNR. Rosario.
+[3].
