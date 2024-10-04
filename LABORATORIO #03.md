@@ -31,17 +31,15 @@ Donde 𝐼0 es la corriente en un punto de la fibra, 𝜎 es la conductividad de
 
 ---
 **4.Procedimiento, Desarrollo y Análisis:**
+
 **¿Qué es la Técnica de Electromiográfia (EMG)?**
 La electromiografía (EMG) es una prueba médica que permite evaluar la salud de los músculos y los nervios que los controlan. Esta técnica consiste en registrar la actividad eléctrica que genera los músculos, tanto en reposo como durante la contracción. 
 
 ![image](https://github.com/user-attachments/assets/f0fd69e1-e9a6-4a96-9010-560b07003865)
-**Figura #02.Principio de la electromiografía (EMG). Extraida de Cleveland**
 
+**Figura #02.Principio de la Técnica Electromiografía (EMG). Extraida de Cleveland**
 
-
-
-
-
+Para desarrollar la técnica en mención, se tienen en cuenta los siguientes factores que resultan importantes para los resultados:
 
 **4.1 Preparación del Sujeto:** Antes de comenzar el registro de señales electromiográficas (EMG), es crucial preparar adecuadamente al sujeto para garantizar la calidad de los datos obtenidos. Esta etapa incluye una serie de paso a paso que se muestra acontinuación:
 
@@ -53,5 +51,35 @@ La electromiografía (EMG) es una prueba médica que permite evaluar la salud de
 
 **Nota Importante:** La preparación del paciente es un aspecto fundamental para garantizar la calidad de los datos obtenidos en una EMG. Un buen protocolo de preparación minimizará el ruido y las interferencias en la señal, lo que permitirá obtener resultados más precisos y confiables.
 
-Ballesteros en su tesis "Diseño de una plataforma multicanal para el registro de señales EMG"[6]expone los primeros pasos para lograr la adquisición de señales electromiográficas del musculo desde alternativas de fácil acondicionamiento que permita conocer información relevante y automatizada de la señal respecto al tiempo de prueba, de la forma en como se origina y el tipo de clasificación y cuantificación que esta conlleva para obtener el resultado.
+Ballesteros en su tesis "Diseño de una plataforma multicanal para el registro de señales EMG" expone los primeros pasos para lograr la adquisición de señales electromiográficas del musculo desde alternativas de fácil acondicionamiento que permita conocer información relevante y automatizada de la señal respecto al tiempo de prueba, de la forma en como se origina y el tipo de clasificación y cuantificación que esta conlleva para obtener el resultado.
+
 **4.2 Sistema de Adquisición de Datos DAQ:**
+
+Un sistema de adquisición de datos (DAQ) es esencial para capturar, procesar y analizar las señales eléctricas generadas por los músculos durante una electromiografía (EMG). Este sistema actúa como un puente entre los electrodos colocados en el cuerpo y la programación donde se almacenan y analizan los datos.
+
+* **Componentes Clave de un Sistema DAQ para la Electromiográfia (EMG):**
+
+1. **Electrodos:** El electrodo es usado como el  conductor eléctrico que establece contacto con un material no metálico en un circuito. Es como un puente que permite que la corriente eléctrica fluya entre un circuito eléctrico y otro medio.
+En la técnica de la electromiografía (EMG) se utilizan electrodos para detectar señales eléctricas del musculo en estudio, para esto se utilizaron electrodos de superficie por que son menos invasivos, es decir, no necesitan ajugas y reducen el riesgo de infección, ademas de que son fáciles de posicionar en el musculo, su función principal es detectar y registrar la actividad eléctrica producida por los músculos.
+
+![image](https://github.com/user-attachments/assets/0d821206-7057-4073-a13c-fdc07d94a1d0)
+
+**Figura #03.Electrodos de Superficie para Electromiográfia (EMG). Extraida de Oxdea**
+
+2. **Microcontrolador STM32:** El uso del microcontrolador stm32, fue útil ya que mediante este se  toma la adquisición de la señal es aqui donde se  configuraron los pines necesarios  para leer datos del sensor AD8232 de electromiográfia, logrando la comunicación entre la respuesta y la interfaz.
+
+
+
+
+  
+
+3. **Sensor AD8232:** El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales EMG, el cual fue util debido a que la  EMG es una señal muy débil y está rodeada de ruido. El AD8232 utiliza una configuración diferencial para amplificar la diferencia de voltaje entre dos electrodos colocados en la piel. Esto permite rechazar el ruido común presente en ambos electrodos, mejorando significativamente la relación señal-ruido, pues cuando este realiza la tarea de amplificar lo hace en una amplia banda de frecuencias, lo que permite capturar los diferentes componentes de la señal EMG, desde las frecuencias bajas hasta las altas.
+
+![image](https://github.com/user-attachments/assets/bcd1edc9-e59e-4703-a961-0cc06f443f42)
+
+**Figura #04. Sensor AD8232 . Extraida dE Componentes101**
+
+**Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
+
+
+
