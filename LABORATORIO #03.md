@@ -81,5 +81,11 @@ En la técnica de la electromiografía (EMG) se utilizan electrodos para detecta
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
+A continuación, se muestra el sistema de adquisición haciendo uso de los componentes anteriores:
+
+![image](https://github.com/user-attachments/assets/a4883fc5-df1f-4603-8018-7a58d338cb74)
+
+**Figura #05. Sistema de Adquisición**
+
 
 
