@@ -173,5 +173,24 @@ Donde:
 
 **Figura #14. Código en Python Donde Se Emplea las Ventanas Hanning . Elaboración Propia**
 
+
 **4.7 Análisis Espectral utilizando la Transformada de Fourier (FFT) :**
 
+El análisis espectral de señales electromiográficas (EMG) es una herramienta fundamental para estudiar la actividad muscular. La Transformada de Fourier Rápida (FFT) es una técnica ampliamente utilizada para descomponer una señal en sus componentes de frecuencia, lo que permite obtener información valiosa sobre la actividad muscular.
+
+La función de la transformada de Fourier, permite identificar las frecuencias dominantes en la señal EMG, que están relacionadas con el tipo de fibra muscular activada y el nivel de contracción, pues al analizar el espectro de la señal EMG, se pueden identificar diferentes patrones de activación muscular asociados a distintos movimientos o condiciones.
+
+
+**Figura #15. Código en Python Donde Se Emplea la FFT . Elaboración Propia**
+
+
+
+**Figura #16. Frecuencia de Ventanas EMG con FFT . Elaboración Propia**
+
+**5. Análisis de Datos**
+
+
+**6. Conclusiones**
+
+
+**7. Bibliografía**
