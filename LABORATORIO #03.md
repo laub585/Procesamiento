@@ -152,6 +152,7 @@ Para este apartado se hizo uso de dos tipos de filtros, los cuales se explican a
 
 Teniendo en cuenta el uso de los filtros, se muestra a continuación la interfaz y el apartado de las graficas donde se observa la señal con ruido y la señal ya filtrada
 
+![image](https://github.com/user-attachments/assets/91a29ec1-9b68-45ef-8782-f39151db86c6)
 
 **Figura #13. Relación Señal sin Filtrar - Señal ya Filtrada . Elaboración Propia**
 
@@ -173,6 +174,10 @@ Donde:
 
 **Figura #14. Código en Python Donde Se Emplea las Ventanas Hanning . Elaboración Propia**
 
+![image](https://github.com/user-attachments/assets/8c9d6c20-b0a9-454c-88fe-3cdf56b276b0)
+
+**Figura #15. Gráfica obtenida al  Emplear las Ventanas Hanning . Elaboración Propia**
+
 
 **4.7 Análisis Espectral utilizando la Transformada de Fourier (FFT) :**
 
@@ -184,6 +189,7 @@ La función de la transformada de Fourier, permite identificar las frecuencias d
 **Figura #15. Código en Python Donde Se Emplea la FFT . Elaboración Propia**
 
 
+![image](https://github.com/user-attachments/assets/7609921f-3b90-44b6-b4a6-f3c35d3d2f45)
 
 **Figura #16. Frecuencia de Ventanas EMG con FFT . Elaboración Propia**
 
