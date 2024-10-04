@@ -68,16 +68,15 @@ En la técnica de la electromiografía (EMG) se utilizan electrodos para detecta
 
 2. **Microcontrolador STM32:** El uso del microcontrolador stm32, fue útil ya que mediante este se  toma la adquisición de la señal es aqui donde se  configuraron los pines necesarios  para leer datos del sensor AD8232 de electromiográfia, logrando la comunicación entre la respuesta y la interfaz.
 
+![image](https://github.com/user-attachments/assets/3ed47807-bcd5-4c81-9b78-a7f8dc9c021c)
 
-
-
-  
+**Figura #04.Periferico Programado desde la STM32. Extraida de CUBEID**
 
 3. **Sensor AD8232:** El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales EMG, el cual fue util debido a que la  EMG es una señal muy débil y está rodeada de ruido. El AD8232 utiliza una configuración diferencial para amplificar la diferencia de voltaje entre dos electrodos colocados en la piel. Esto permite rechazar el ruido común presente en ambos electrodos, mejorando significativamente la relación señal-ruido, pues cuando este realiza la tarea de amplificar lo hace en una amplia banda de frecuencias, lo que permite capturar los diferentes componentes de la señal EMG, desde las frecuencias bajas hasta las altas.
 
 ![image](https://github.com/user-attachments/assets/bcd1edc9-e59e-4703-a961-0cc06f443f42)
 
-**Figura #04. Sensor AD8232 . Extraida de Componentes101**
+**Figura #05. Sensor AD8232 . Extraida de Componentes101**
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
@@ -85,7 +84,7 @@ A continuación, se muestra el sistema de adquisición haciendo uso de los compo
 
 ![image](https://github.com/user-attachments/assets/7615366a-d0e6-4720-8827-5e1d109d464a)
 
-**Figura #05. Sistema de Adquisición de EMG. Elaboración propia**
+**Figura #06. Sistema de Adquisición de EMG. Elaboración propia**
 
 **4.3 Selección del Musculo "Biceps" y Calculo de Frecuencia de Muestreo:** 
 Para este laboratorio, se hizo selección del musculo del Biceps debido a que es de los mas comparados en la tecnica de electromiografía (EMG), ya que juega un papel clave en la flexión del codo y otros movimientos del brazo. Para estudiar su actividad electromiográfica de manera adecuada, es esencial capturar y analizar correctamente las señales EMG, y un aspecto crucial de este proceso es determinar la frecuencia de muestreo adecuada. La señal EMG es el resultado de la actividad eléctrica generada por los potenciales de acción de las fibras musculares durante la contracción muscular. La señal EMG del bíceps, al igual que en otros músculos, está compuesta por una mezcla de frecuencias que representan la actividad eléctrica del músculo. 
@@ -95,7 +94,8 @@ Para capturar adecuadamente una señal EMG, es necesario aplicar el teorema de m
 ![image](https://github.com/user-attachments/assets/29df32c4-3ded-429f-b518-a31e3095ac46)
 
 Donde:
-*fs es la frecuencia de muestreo.
+
+* fs es la frecuencia de muestreo.
 * 𝑓max es la frecuencia máxima de la señal.
 
 En el caso del bíceps, si la señal EMG tiene componentes de frecuencia de hasta 500 Hz, la frecuencia de muestreo mínima que debe
@@ -104,6 +104,16 @@ En el caso del bíceps, si la señal EMG tiene componentes de frecuencia de hast
 
 Esto significa que la frecuencia de muestreo mínima recomendada para capturar adecuadamente la señal EMG del músculo bíceps es de 1000 Hz.
   
+**4.4 Registro de la señal Electromiográfica EMG:**
+Para el registro de la señal Electromiográfica, En este sistema, se captura la actividad eléctrica muscular (EMG) de manera continua a lo largo de toda la prueba. Esta señal biológica es adquirida por la STM32 y los datos recolectados son enviados en tiempo real a una interfaz gráfica desarrollada en Python utilizando Qt Designer. Esta interfaz visual permite al usuario observar instantáneamente las variaciones en la señal EMG, facilitando así el análisis y la interpretación de los resultados durante el experimento.
+
+A continuación, se muestra una parte del codigo de la STM32, donde se implementa un sistema básico de adquisición de señales EMG. En este apartado, se configuran varios periféricos que se encarga de registrar datos del sensor mediante un ADC (Convertidor Analógico-Digital) y transmitirlos a través de USB utilizando la clase CDC (Communication Device Class). Se definen variables para manejar el ADC, DMA y un temporizador, que genera interrupciones a intervalos definidos y asi se envía periódicamente a una computadora a través de una interfaz de comunicación realizada por Q- designer.
+
+![image](https://github.com/user-attachments/assets/3b883070-9047-4fc5-bddc-fefccfd1420a)
+
+**Figura #07.Programación de la STM32. Elaboración propia**
+
+
 
 
 
