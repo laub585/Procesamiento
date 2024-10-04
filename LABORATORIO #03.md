@@ -170,7 +170,7 @@ Donde:
 * N, Es la longitud total de la ventana
 * n, Indice que varia desde 0 hasta N-1
 
-
+![image](https://github.com/user-attachments/assets/8e987acd-9333-4d6a-8ad3-535e5b223d56)
 
 **Figura #14. Código en Python Donde Se Emplea las Ventanas Hanning . Elaboración Propia**
 
@@ -185,9 +185,9 @@ El análisis espectral de señales electromiográficas (EMG) es una herramienta 
 
 La función de la transformada de Fourier, permite identificar las frecuencias dominantes en la señal EMG, que están relacionadas con el tipo de fibra muscular activada y el nivel de contracción, pues al analizar el espectro de la señal EMG, se pueden identificar diferentes patrones de activación muscular asociados a distintos movimientos o condiciones.
 
+![image](https://github.com/user-attachments/assets/42c50df5-8097-4b20-b1cc-6935125cd0f5)
 
 **Figura #15. Código en Python Donde Se Emplea la FFT . Elaboración Propia**
-
 
 ![image](https://github.com/user-attachments/assets/7609921f-3b90-44b6-b4a6-f3c35d3d2f45)
 
@@ -197,6 +197,14 @@ La función de la transformada de Fourier, permite identificar las frecuencias d
 
 
 **6. Conclusiones**
+*
 
+
+*
+
+
+*
 
 **7. Bibliografía**
+[1]. 
+[2]. 
