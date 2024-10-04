@@ -90,12 +90,20 @@ A continuación, se muestra el sistema de adquisición haciendo uso de los compo
 **4.3 Selección del Musculo "Biceps" y Calculo de Frecuencia de Muestreo:** 
 Para este laboratorio, se hizo selección del musculo del Biceps debido a que es de los mas comparados en la tecnica de electromiografía (EMG), ya que juega un papel clave en la flexión del codo y otros movimientos del brazo. Para estudiar su actividad electromiográfica de manera adecuada, es esencial capturar y analizar correctamente las señales EMG, y un aspecto crucial de este proceso es determinar la frecuencia de muestreo adecuada. La señal EMG es el resultado de la actividad eléctrica generada por los potenciales de acción de las fibras musculares durante la contracción muscular. La señal EMG del bíceps, al igual que en otros músculos, está compuesta por una mezcla de frecuencias que representan la actividad eléctrica del músculo. 
 
-![image](https://github.com/user-attachments/assets/64cd6b0f-1520-4dd1-9f3b-83ae0e992abf)
+Para capturar adecuadamente una señal EMG, es necesario aplicar el teorema de muestreo de Nyquist el cual explica el principio de establecer que la frecuencia de muestreo debe ser al menos el doble de la frecuencia máxima presente en la señal:
 
-**Figura #06. Ubicación de los Electrodos en el Biceps EMG. Extraida de la guia de la práctica**
+![image](https://github.com/user-attachments/assets/29df32c4-3ded-429f-b518-a31e3095ac46)
 
-Para capturar adecuadamente una señal EMG, es necesario aplicar el teorema de muestreo de Nyquist el cual explica el siguiente principio:
+Donde:
+*fs es la frecuencia de muestreo.
+* 𝑓max es la frecuencia máxima de la señal.
 
+En el caso del bíceps, si la señal EMG tiene componentes de frecuencia de hasta 500 Hz, la frecuencia de muestreo mínima que debe
+
+![image](https://github.com/user-attachments/assets/ef3ecbd3-5a53-4272-9422-7f30bfe4e7fa)
+
+Esto significa que la frecuencia de muestreo mínima recomendada para capturar adecuadamente la señal EMG del músculo bíceps es de 1000 Hz.
+  
 
 
 
