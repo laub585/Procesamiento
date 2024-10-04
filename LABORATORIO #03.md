@@ -120,7 +120,7 @@ Estos datos de la señal EMG, adquiridos por la STM32 se procesan en tiempo real
 
 Para comprender mas la señal en la interfaz, se debe entender que la fatiga muscular es una respuesta natural del cuerpo a un esfuerzo físico prolongado o intenso, lo que permitiria visualizar en la toma de la señal son los puntos de contracción de manera más ruidosa, con la aparición de componentes de baja frecuencia y un aumento en la variabilidad de la señal.
 
-
+![image](https://github.com/user-attachments/assets/f5fb884e-da83-4348-872f-8b20eb7e9a65)
 
 **Figura #09. Interfaz realizada por Q-Designer. Elaboración propia**
 
@@ -128,6 +128,7 @@ Para comprender mas la señal en la interfaz, se debe entender que la fatiga mus
 
 **Figura #10.Señal EMG Secuencia Contracción Relajación . Extraida de Literatura**
 
+![image](https://github.com/user-attachments/assets/26cb5ef5-8a32-4328-9417-e9716bac6c20)
 
 **Figura #11.Señal EMG Obtenida Por Sistema de Adquisición en Interfaz Q- Designer . Elaboración Propia**
 
@@ -186,11 +187,96 @@ La función de la transformada de Fourier, permite identificar las frecuencias d
 
 **Figura #16. Frecuencia de Ventanas EMG con FFT . Elaboración Propia**
 
-**4.8 Cambio del espectro de la señal en cada ventana conforme se acerca la fatiga muscular**
+**4.8 Cambio del espectro de la señal en cada ventana conforme se acerca la fatiga muscular, Disminución de la frecuencia mediana**
 
-**Evaluación de la disminución de la frecuencia mediana en cada ventana como indicador de la fatiga**
+En este estudio, analizaremos cómo la fatiga muscular se manifiesta en cambios específicos de las señales electromiográficas (EMG). En particular, nos centraremos en dos indicadores clave: la evolución del espectro de la señal en ventanas de tiempo sucesivas y la disminución de la frecuencia mediana a medida que el músculo se fatiga.
+
+Ventana 1: Frecuencia Dominante = 391.00 Hz, Frecuencia Mediana = 252.00 Hz, Desviación Estándar = 162.54
+
+Ventana 2: Frecuencia Dominante = 391.00 Hz, Frecuencia Mediana = 247.00 Hz, Desviación Estándar = 97.72
+
+Ventana 3: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 306.00 Hz, Desviación Estándar = 100.21
+
+Ventana 4: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 249.00 Hz, Desviación Estándar = 579.37
+
+Ventana 5: Frecuencia Dominante = 59.00 Hz, Frecuencia Mediana = 137.00 Hz, Desviación Estándar = 268.79
+
+Ventana 6: Frecuencia Dominante = 67.00 Hz, Frecuencia Mediana = 175.00 Hz, Desviación Estándar = 156.32
+
+Ventana 7: Frecuencia Dominante = 58.00 Hz, Frecuencia Mediana = 164.00 Hz, Desviación Estándar = 272.67
+
+Ventana 8: Frecuencia Dominante = 63.00 Hz, Frecuencia Mediana = 158.00 Hz, Desviación Estándar = 198.68
+
+Ventana 9: Frecuencia Dominante = 68.00 Hz, Frecuencia Mediana = 154.00 Hz, Desviación Estándar = 275.74
+
+Ventana 10: Frecuencia Dominante = 74.00 Hz, Frecuencia Mediana = 150.00 Hz, Desviación Estándar = 212.18
+
+Ventana 11: Frecuencia Dominante = 65.00 Hz, Frecuencia Mediana = 150.00 Hz, Desviación Estándar = 263.76
+
+Ventana 12: Frecuencia Dominante = 79.00 Hz, Frecuencia Mediana = 174.00 Hz, Desviación Estándar = 235.63
+
+Ventana 13: Frecuencia Dominante = 66.00 Hz, Frecuencia Mediana = 151.00 Hz, Desviación Estándar = 281.04
+
+Ventana 14: Frecuencia Dominante = 68.00 Hz, Frecuencia Mediana = 148.00 Hz, Desviación Estándar = 319.10
+
+Ventana 15: Frecuencia Dominante = 64.00 Hz, Frecuencia Mediana = 148.00 Hz, Desviación Estándar = 323.87
+
+Ventana 16: Frecuencia Dominante = 49.00 Hz, Frecuencia Mediana = 166.00 Hz, Desviación Estándar = 310.07
+
+Ventana 17: Frecuencia Dominante = 72.00 Hz, Frecuencia Mediana = 168.00 Hz, Desviación Estándar = 334.60
+
+Ventana 18: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 180.00 Hz, Desviación Estándar = 316.85
+
+Ventana 19: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 178.00 Hz, Desviación Estándar = 257.94
+
+Ventana 20: Frecuencia Dominante = 77.00 Hz, Frecuencia Mediana = 181.00 Hz, Desviación Estándar = 261.25
+
+Ventana 21: Frecuencia Dominante = 391.00 Hz, Frecuencia Mediana = 207.00 Hz, Desviación Estándar = 320.56
+
+Ventana 22: Frecuencia Dominante = 81.00 Hz, Frecuencia Mediana = 151.00 Hz, Desviación Estándar = 358.03
+
+Ventana 23: Frecuencia Dominante = 53.00 Hz, Frecuencia Mediana = 145.00 Hz, Desviación Estándar = 429.80
+
+Ventana 24: Frecuencia Dominante = 70.00 Hz, Frecuencia Mediana = 158.00 Hz, Desviación Estándar = 462.85
+
+Ventana 25: Frecuencia Dominante = 61.00 Hz, Frecuencia Mediana = 171.00 Hz, Desviación Estándar = 441.30
+
+Ventana 26: Frecuencia Dominante = 86.00 Hz, Frecuencia Mediana = 169.00 Hz, Desviación Estándar = 355.48
+
+Ventana 27: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 242.00 Hz, Desviación Estándar = 246.18
+
+Ventana 28: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 248.00 Hz, Desviación Estándar = 252.73
+
+Ventana 29: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 189.00 Hz, Desviación Estándar = 224.02
+
+Ventana 30: Frecuencia Dominante = 64.00 Hz, Frecuencia Mediana = 147.00 Hz, Desviación Estándar = 296.30
+
+Ventana 31: Frecuencia Dominante = 52.00 Hz, Frecuencia Mediana = 172.00 Hz, Desviación Estándar = 284.43
+
+Ventana 32: Frecuencia Dominante = 52.00 Hz, Frecuencia Mediana = 211.00 Hz, Desviación Estándar = 257.59
+
+Ventana 33: Frecuencia Dominante = 64.00 Hz, Frecuencia Mediana = 163.00 Hz, Desviación Estándar = 228.97
+
+Ventana 34: Frecuencia Dominante = 391.00 Hz, Frecuencia Mediana = 184.00 Hz, Desviación Estándar = 238.91
+
+Ventana 35: Frecuencia Dominante = 392.00 Hz, Frecuencia Mediana = 226.00 Hz, Desviación Estándar = 268.57
+
+Ventana 36: Frecuencia Dominante = 53.00 Hz, Frecuencia Mediana = 151.00 Hz, Desviación Estándar = 224.38
+
+Ventana 37: Frecuencia Dominante = 55.00 Hz, Frecuencia Mediana = 136.00 Hz, Desviación Estándar = 235.08
+
+
+**Promedios:**
+
+**Frecuencia Dominante Promedio** = 170.81 Hz
+
+**Frecuencia Mediana Promedio** = 181.24 Hz
+
+**Desviación Estándar Promedio** = 279.82
+
 
 **Implementación de  una prueba de hipótesis para verificar si el cambio en la mediana es significativo estadísticamente:**
+
 
 
 **5. Análisis de Datos**
