@@ -64,7 +64,7 @@ Un sistema de adquisición de datos (DAQ) es esencial para capturar, procesar y 
 1. **Electrodos:** El electrodo es usado como el  conductor eléctrico que establece contacto con un material no metálico en un circuito. Es como un puente que permite que la corriente eléctrica fluya entre un circuito eléctrico y otro medio.
 En la técnica de la electromiografía (EMG) se utilizan electrodos para detectar señales eléctricas del musculo en estudio, para esto se utilizaron electrodos de superficie por que son menos invasivos, es decir, no necesitan ajugas y reducen el riesgo de infección, ademas de que son fáciles de posicionar en el musculo, su función principal es detectar y registrar la actividad eléctrica producida por los músculos.
 
-![image](https://github.com/user-attachments/assets/0d821206-7057-4073-a13c-fdc07d94a1d0)
+![image](https://github.com/user-attachments/assets/0d821206-7057-4073-a13c-fdc07d94a1d0) 
 
 **Figura #03.Electrodos de Superficie para Electromiográfia (EMG). Extraida de Oxdea**
 
@@ -116,7 +116,7 @@ A continuación, se muestra una parte del codigo de la STM32, donde se implement
 
 **Figura #07.Programación de la STM32. Elaboración propia**
 
-Estos datos de la señal EMG, adquiridos por la STM32 se procesan en tiempo real y como se decia anteriormente son enviados a una interfaz gráfica desarrollada mediante el lenguaje de  Python se encarga de visualizarlos. Esta interfaz, creada con la librería PyQt, presenta la señal EMG en forma de una gráfica que se actualiza constantemente, permitiendo al monitorear la actividad muscular durante la contracción muscular hasta que llega a fatigarse.
+Estos datos de la señal EMG, adquiridos por la STM32 se procesan en tiempo real y como se decia anteriormente son enviados a una interfaz gráfica desarrollada mediante el lenguaje de  Python que se encarga de visualizarlos. Esta interfaz, creada con la librería PyQt, presenta la señal EMG en forma de una gráfica que se actualiza constantemente, permitiendo al monitorear la actividad muscular durante la contracción muscular hasta que llega a fatigarse.
 
 Para comprender mas la señal en la interfaz, se debe entender que la fatiga muscular es una respuesta natural del cuerpo a un esfuerzo físico prolongado o intenso, lo que permitiria visualizar en la toma de la señal son los puntos de contracción de manera más ruidosa, con la aparición de componentes de baja frecuencia y un aumento en la variabilidad de la señal.
 
@@ -131,4 +131,47 @@ Para comprender mas la señal en la interfaz, se debe entender que la fatiga mus
 
 **Figura #10.Señal EMG Obtenida Por Sistema de Adquisición en Interfaz Q- Designer . Elaboración Propia**
 
+
+**4.5 Filtrado de la Señal:**
+
+En el ámbito de las señales, el filtrado consiste en la modificación intencional del espectro de frecuencia de una señal. Esto implica alterar la amplitud de las diferentes componentes frecuenciales que conforman la señal original. Es decir, se seleccionan o eliminar ciertas frecuencias de una señal, con el objetivo de resaltar o atenuar determinadas características.
+
+Para este apartado se hizo uso de dos tipos de filtros, los cuales se explican acontinuación:
+
+* **Filtro Pasa Altos:** Un filtro pasa altos es un sistema que permite el paso de las componentes de frecuencia por encima de una determinada frecuencia de corte (fc), atenuando o bloqueando las componentes de frecuencia por debajo de esa frecuencia. Es decir, este tipo de filtro deja pasar las altas frecuencias y bloquea las bajas.
+
+
+
+**Figura #11. Código en Python Donde Se Emplea Filtro Pasa Alto. Elaboración Propia**
+
+* **Filtro Pasa Bajos:** Un filtro pasabajos es el complemento del filtro pasaaltos. Permite el paso de las componentes de frecuencia por debajo de una determinada frecuencia de corte (fc), atenuando o bloqueando las componentes de frecuencia por encima de esa frecuencia. Es decir, este tipo de filtro deja pasar las bajas frecuencias y bloquea las altas.
+
+
+
+**Figura #12. Código en Python Donde Se Emplea Filtro Pasa Bajos. Elaboración Propia**
+
+Teniendo en cuenta el uso de los filtros, se muestra a continuación la interfaz y el apartado de las graficas donde se observa la señal con ruido y la señal ya filtrada
+
+
+**Figura #13. Relación Señal sin Filtrar - Señal ya Filtrada . Elaboración Propia**
+
+
+**4.6 División de la Señal Registrada en Ventanas de Tiempo "Hanning" :**
+
+Para este apartado se hace uso de la técnica de las ventanas Hanning, que explica como desde una función matemática que se aplica a una señal se logra suavizar sus extremos. Esto es especialmente útil en el análisis espectral de señales, donde los abruptos inicios y finales de una señal pueden introducir artefactos en el espectro de frecuencia. Cuando se analiza una señal larga, es común dividirla en segmentos más cortos y aplicar una ventana de Hanning a cada segmento.
+
+La función que se utiliza en el procesamiento de señales para suavizar las discontinuidades en los bordes de un segmento de señal, con la siguiente formula
+
+![image](https://github.com/user-attachments/assets/93532c2b-9d85-4f11-a1f2-ede9cf525705)
+
+Donde:
+* w(n), Representa el valor de la ventana en el tiempo n
+* N, Es la longitud total de la ventana
+* n, Indice que varia desde 0 hasta N-1
+
+
+
+**Figura #14. Código en Python Donde Se Emplea las Ventanas Hanning . Elaboración Propia**
+
+**4.7 Análisis Espectral utilizando la Transformada de Fourier (FFT) :**
 
