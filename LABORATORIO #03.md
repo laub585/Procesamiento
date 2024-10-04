@@ -37,7 +37,7 @@ La electromiografía (EMG) es una prueba médica que permite evaluar la salud de
 
 ![image](https://github.com/user-attachments/assets/f0fd69e1-e9a6-4a96-9010-560b07003865)
 
-**Figura #02.Principio de la Técnica Electromiografía (EMG). Extraida de Cleveland**
+**Figura #03.Principio de la Técnica Electromiografía (EMG). Extraida de Cleveland**
 
 Para desarrollar la técnica en mención, se tienen en cuenta los siguientes factores que resultan importantes para los resultados:
 
@@ -66,19 +66,19 @@ En la técnica de la electromiografía (EMG) se utilizan electrodos para detecta
 
 ![image](https://github.com/user-attachments/assets/0d821206-7057-4073-a13c-fdc07d94a1d0) 
 
-**Figura #03.Electrodos de Superficie para Electromiográfia (EMG). Extraida de Oxdea**
+**Figura #04.Electrodos de Superficie para Electromiográfia (EMG). Extraida de Oxdea**
 
 2. **Microcontrolador STM32:** El uso del microcontrolador stm32, fue útil ya que mediante este se  toma la adquisición de la señal es aqui donde se  configuraron los pines necesarios  para leer datos del sensor AD8232 de electromiográfia, logrando la comunicación entre la respuesta y la interfaz.
 
 ![image](https://github.com/user-attachments/assets/3ed47807-bcd5-4c81-9b78-a7f8dc9c021c)
 
-**Figura #04.Periferico Programado desde la STM32. Extraida de CUBEID**
+**Figura #05.Periferico Programado desde la STM32. Extraida de CUBEID**
 
 3. **Sensor AD8232:** El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales EMG, el cual fue util debido a que la  EMG es una señal muy débil y está rodeada de ruido. El AD8232 utiliza una configuración diferencial para amplificar la diferencia de voltaje entre dos electrodos colocados en la piel. Esto permite rechazar el ruido común presente en ambos electrodos, mejorando significativamente la relación señal-ruido, pues cuando este realiza la tarea de amplificar lo hace en una amplia banda de frecuencias, lo que permite capturar los diferentes componentes de la señal EMG, desde las frecuencias bajas hasta las altas.
 
 ![image](https://github.com/user-attachments/assets/bcd1edc9-e59e-4703-a961-0cc06f443f42)
 
-**Figura #05. Sensor AD8232 . Extraida de Componentes101**
+**Figura #06. Sensor AD8232 . Extraida de Componentes101**
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
@@ -86,7 +86,7 @@ A continuación, se muestra el sistema de adquisición haciendo uso de los compo
 
 ![image](https://github.com/user-attachments/assets/7615366a-d0e6-4720-8827-5e1d109d464a)
 
-**Figura #06. Sistema de Adquisición de EMG. Elaboración propia**
+**Figura #07. Sistema de Adquisición de EMG. Elaboración propia**
 
 **4.3 Selección del Musculo "Biceps" y Calculo de Frecuencia de Muestreo:** 
 Para este laboratorio, se hizo selección del musculo del Biceps debido a que es de los mas comparados en la tecnica de electromiografía (EMG), ya que juega un papel clave en la flexión del codo y otros movimientos del brazo. Para estudiar su actividad electromiográfica de manera adecuada, es esencial capturar y analizar correctamente las señales EMG, y un aspecto crucial de este proceso es determinar la frecuencia de muestreo adecuada. La señal EMG es el resultado de la actividad eléctrica generada por los potenciales de acción de las fibras musculares durante la contracción muscular. La señal EMG del bíceps, al igual que en otros músculos, está compuesta por una mezcla de frecuencias que representan la actividad eléctrica del músculo. 
@@ -114,7 +114,7 @@ A continuación, se muestra una parte del codigo de la STM32, donde se implement
 
 ![image](https://github.com/user-attachments/assets/3b883070-9047-4fc5-bddc-fefccfd1420a)
 
-**Figura #07.Programación de la STM32. Elaboración propia**
+**Figura #08.Programación de la STM32. Elaboración propia**
 
 Estos datos de la señal EMG, adquiridos por la STM32 se procesan en tiempo real y como se decia anteriormente son enviados a una interfaz gráfica desarrollada mediante el lenguaje de  Python que se encarga de visualizarlos. Esta interfaz, creada con la librería PyQt, presenta la señal EMG en forma de una gráfica que se actualiza constantemente, permitiendo al monitorear la actividad muscular durante la contracción muscular hasta que llega a fatigarse.
 
@@ -122,14 +122,14 @@ Para comprender mas la señal en la interfaz, se debe entender que la fatiga mus
 
 
 
-**Figura #08. Interfaz realizada por Q-Designer. Elaboración propia**
+**Figura #09. Interfaz realizada por Q-Designer. Elaboración propia**
 
 ![image](https://github.com/user-attachments/assets/dc538107-6fbc-42ab-927f-9b93760bb08b)
 
-**Figura #09.Señal EMG Secuencia Contracción Relajación . Extraida de Literatura**
+**Figura #10.Señal EMG Secuencia Contracción Relajación . Extraida de Literatura**
 
 
-**Figura #10.Señal EMG Obtenida Por Sistema de Adquisición en Interfaz Q- Designer . Elaboración Propia**
+**Figura #11.Señal EMG Obtenida Por Sistema de Adquisición en Interfaz Q- Designer . Elaboración Propia**
 
 
 **4.5 Filtrado de la Señal:**
@@ -140,21 +140,14 @@ Para este apartado se hizo uso de dos tipos de filtros, los cuales se explican a
 
 * **Filtro Pasa Altos:** Un filtro pasa altos es un sistema que permite el paso de las componentes de frecuencia por encima de una determinada frecuencia de corte (fc), atenuando o bloqueando las componentes de frecuencia por debajo de esa frecuencia. Es decir, este tipo de filtro deja pasar las altas frecuencias y bloquea las bajas.
 
-
-
-**Figura #11. Código en Python Donde Se Emplea Filtro Pasa Alto. Elaboración Propia**
-
 * **Filtro Pasa Bajos:** Un filtro pasabajos es el complemento del filtro pasaaltos. Permite el paso de las componentes de frecuencia por debajo de una determinada frecuencia de corte (fc), atenuando o bloqueando las componentes de frecuencia por encima de esa frecuencia. Es decir, este tipo de filtro deja pasar las bajas frecuencias y bloquea las altas.
 
-
-
-**Figura #12. Código en Python Donde Se Emplea Filtro Pasa Bajos. Elaboración Propia**
-
-Teniendo en cuenta el uso de los filtros, se muestra a continuación la interfaz y el apartado de las graficas donde se observa la señal con ruido y la señal ya filtrada
+Teniendo en cuenta el uso de los filtros, se muestra a continuación las graficas donde se observa la señal con ruido y la señal ya filtrada:
 
 ![image](https://github.com/user-attachments/assets/91a29ec1-9b68-45ef-8782-f39151db86c6)
 
-**Figura #13. Relación Señal sin Filtrar - Señal ya Filtrada . Elaboración Propia**
+**Figura #12. Relación Señal sin Filtrar - Señal ya Filtrada . Elaboración Propia**
+
 
 
 **4.6 División de la Señal Registrada en Ventanas de Tiempo "Hanning" :**
@@ -172,11 +165,11 @@ Donde:
 
 ![image](https://github.com/user-attachments/assets/8e987acd-9333-4d6a-8ad3-535e5b223d56)
 
-**Figura #14. Código en Python Donde Se Emplea las Ventanas Hanning . Elaboración Propia**
+**Figura #13. Código en Python Donde Se Emplea las Ventanas Hanning . Elaboración Propia**
 
 ![image](https://github.com/user-attachments/assets/8c9d6c20-b0a9-454c-88fe-3cdf56b276b0)
 
-**Figura #15. Gráfica obtenida al  Emplear las Ventanas Hanning . Elaboración Propia**
+**Figura #14. Gráfica obtenida al  Emplear las Ventanas Hanning . Elaboración Propia**
 
 
 **4.7 Análisis Espectral utilizando la Transformada de Fourier (FFT) :**
@@ -215,15 +208,18 @@ Con lo anterior, se puede analizar que el espectro de potencia obtenido a travé
 El análisis de las 37 ventanas de señal EMG revela una variabilidad considerable en las frecuencias dominantes y medianas, sugiriendo una actividad muscular dinámica y cambiante. La alta desviación estándar en muchas ventanas indica una amplia distribución de frecuencias, posiblemente debido a la presencia de diferentes tipos de fibras musculares o a ruido en la señal. Los valores atípicos en la frecuencia dominante podrían indicar eventos transitorios o artefactos. En general, los resultados sugieren una actividad muscular de baja intensidad con momentos de mayor activación. Sin embargo, para una interpretación más precisa, se requiere un análisis más profundo considerando el contexto experimental y el tipo de músculo estudiado.
 
 **6. Conclusiones**
-*
+* El estudio demuestra de manera clara que el preprocesamiento de las señales EMG, mediante filtrado Butterworth y ventaneo de Hanning, es fundamental para obtener resultados, pues al eliminar el ruido y las interferencias, se logra una señal más limpia y estructurada, lo que facilita la identificación de los eventos musculares de interés como lo fue la fatiga del musculo.
+  
+* El uso de la Transformada Rápida de Fourier (FFT) demuestra ser una herramienta analitica para verificar  la composición frecuencial de la señal EMG, pues al descomponer la señal en sus componentes de frecuencia, se puedo identificar las bandas de frecuencia dominantes de concentración de energía en las frecuencias bajas y medias, lo que es típico para la actividad muscular. 
 
-
-*
-
-
-*
+*La técnica de la electromiografía (EMG) si cumple con el hecho de evaluar la salud y función muscular como en nuestro caso fue el biceps, al medir la actividad eléctrica del músculo se lograron visualizar la eficacia de cada momento como lo fue la relajación y contracción mediante el procesamiento de señales.
 
 **7. Bibliografía**
-[1]. 
+[1]. Corredor,A. (2024). Guia #03 Procesamiento de Señales. UMNG.
 [2]. Miyara, F. (2004). Filtros activos. Cátedra de Electrónica III FCEIA-UNR. Rosario.
-[3].
+[3].de Señales usando ventanas, T. A. F. (s/f). Sistemas y Señales I. Edu.ar. Recuperado el 4 de octubre de 2024, de https://www.fceia.unr.edu.ar/tesys/html/Analisis_Frecuencial_usando_ventanas.pdf
+[4]. Cortés, J. A., Medina, F. A., & Chaves, J. A. (2007). Del análisis de fourier a las wavelets análisis de fourier. Scientia et technica, 1(34).
+[5].Báez, M. E., García, A. M., & Carrera, J. M. E. (2008). Análisis espectral mediante el uso de la FFT.
+[6]. Mena, A. O., Yolanda, G., Cano, V., & Tizayuca-pachuca, F. (2014). Adquisición y procesamiento de una señal electromiográfica para control de una prótesis. Universidad Autónoma Del Estado de Hidalgo, XXIX, 2, 1-8.
+
+
