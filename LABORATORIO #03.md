@@ -275,8 +275,15 @@ Ventana 37: Frecuencia Dominante = 55.00 Hz, Frecuencia Mediana = 136.00 Hz, Des
 **Desviación Estándar Promedio** = 279.82
 
 
-**Implementación de  una prueba de hipótesis para verificar si el cambio en la mediana es significativo estadísticamente:**
+* **Implementación de  una prueba de hipótesis para verificar si el cambio en la mediana es significativo estadísticamente:**
 
+![image](https://github.com/user-attachments/assets/e8f60ae8-8204-412e-9b08-d8396af919b4)
+
+**Figura #17. Explicación del Codigo de la implementación de Hipotesis . Elaboración Propia**
+
+![image](https://github.com/user-attachments/assets/0fff4b64-76db-48b0-9bd1-5d02b0b97cb6)
+
+**Figura #18. Compilación de la implementación de Hipotesis . Elaboración Propia**
 
 
 **5. Análisis de Datos**
@@ -292,6 +299,8 @@ El análisis para las graficas #13 - #14 evidencia el cambio entre la señal fil
 Con lo anterior, se puede analizar que el espectro de potencia obtenido a través de la Transformada Rápida de Fourier (FFT) nos brinda una representación detallada de la composición frecuencial de la señal del musculo biceps, muestra cómo la potencia se distribuye a lo largo de distintas frecuencias. En las frecuencias bajas (<100 Hz), se observan picos significativos que representan la actividad muscular, ya que la mayor parte de la información útil en una señal EMG se encuentra en el rango de 10-150 Hz. Sin embargo, destaca un pico fuerte alrededor de los 400 Hz, que probablemente sea un artefacto o interferencia, como ruido eléctrico, que no fue completamente eliminado durante el filtrado. Después de los 100 Hz, la potencia disminuye rápidamente, lo que indica que las altas frecuencias no deseadas han sido en gran parte eliminadas, salvo por el pico en los 400 Hz, que es el resultado de descomponer la señal en sus componentes de frecuencia.
 
 El análisis de las 37 ventanas de señal EMG revela una variabilidad considerable en las frecuencias dominantes y medianas, sugiriendo una actividad muscular dinámica y cambiante. La alta desviación estándar en muchas ventanas indica una amplia distribución de frecuencias, posiblemente debido a la presencia de diferentes tipos de fibras musculares o a ruido en la señal. Los valores atípicos en la frecuencia dominante podrían indicar eventos transitorios o artefactos. En general, los resultados sugieren una actividad muscular de baja intensidad con momentos de mayor activación. Sin embargo, para una interpretación más precisa, se requiere un análisis más profundo considerando el contexto experimental y el tipo de músculo estudiado.
+
+Finalmente para la hipotesis, Los datos analizados muestran que las frecuencias dominantes presentan un promedio de 170.81 Hz y una alta variabilidad, lo que indica que los valores están bastante dispersos. Sin embargo, al realizar una prueba de hipótesis, no se encontró evidencia suficiente para afirmar que estas frecuencias sean significativamente diferentes de 100 Hz. Esto sugiere que, en promedio, las frecuencias dominantes no son consistentemente mayores o menores a 100 Hz, aunque existe una considerable dispersión en los valores.
 
 **6. Conclusiones**
 * El estudio demuestra de manera clara que el preprocesamiento de las señales EMG, mediante filtrado Butterworth y ventaneo de Hanning, es fundamental para obtener resultados, pues al eliminar el ruido y las interferencias, se logra una señal más limpia y estructurada, lo que facilita la identificación de los eventos musculares de interés como lo fue la fatiga del musculo.
