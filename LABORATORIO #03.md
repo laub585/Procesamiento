@@ -215,11 +215,17 @@ El análisis de las 37 ventanas de señal EMG revela una variabilidad considerab
 *La técnica de la electromiografía (EMG) si cumple con el hecho de evaluar la salud y función muscular como en nuestro caso fue el biceps, al medir la actividad eléctrica del músculo se lograron visualizar la eficacia de cada momento como lo fue la relajación y contracción mediante el procesamiento de señales.
 
 **7. Bibliografía**
+
 [1]. Corredor,A. (2024). Guia #03 Procesamiento de Señales. UMNG.
+
 [2]. Miyara, F. (2004). Filtros activos. Cátedra de Electrónica III FCEIA-UNR. Rosario.
+
 [3].de Señales usando ventanas, T. A. F. (s/f). Sistemas y Señales I. Edu.ar. Recuperado el 4 de octubre de 2024, de https://www.fceia.unr.edu.ar/tesys/html/Analisis_Frecuencial_usando_ventanas.pdf
+
 [4]. Cortés, J. A., Medina, F. A., & Chaves, J. A. (2007). Del análisis de fourier a las wavelets análisis de fourier. Scientia et technica, 1(34).
+
 [5].Báez, M. E., García, A. M., & Carrera, J. M. E. (2008). Análisis espectral mediante el uso de la FFT.
+
 [6]. Mena, A. O., Yolanda, G., Cano, V., & Tizayuca-pachuca, F. (2014). Adquisición y procesamiento de una señal electromiográfica para control de una prótesis. Universidad Autónoma Del Estado de Hidalgo, XXIX, 2, 1-8.
 
 
