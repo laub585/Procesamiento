@@ -77,15 +77,26 @@ En la técnica de la electromiografía (EMG) se utilizan electrodos para detecta
 
 ![image](https://github.com/user-attachments/assets/bcd1edc9-e59e-4703-a961-0cc06f443f42)
 
-**Figura #04. Sensor AD8232 . Extraida dE Componentes101**
+**Figura #04. Sensor AD8232 . Extraida de Componentes101**
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
 A continuación, se muestra el sistema de adquisición haciendo uso de los componentes anteriores:
 
-![image](https://github.com/user-attachments/assets/a4883fc5-df1f-4603-8018-7a58d338cb74)
+![image](https://github.com/user-attachments/assets/7615366a-d0e6-4720-8827-5e1d109d464a)
 
-**Figura #05. Sistema de Adquisición**
+**Figura #05. Sistema de Adquisición de EMG. Elaboración propia**
+
+**4.3 Selección del Musculo "Biceps" y Calculo de Frecuencia de Muestreo:** 
+Para este laboratorio, se hizo selección del musculo del Biceps debido a que es de los mas comparados en la tecnica de electromiografía (EMG), ya que juega un papel clave en la flexión del codo y otros movimientos del brazo. Para estudiar su actividad electromiográfica de manera adecuada, es esencial capturar y analizar correctamente las señales EMG, y un aspecto crucial de este proceso es determinar la frecuencia de muestreo adecuada. La señal EMG es el resultado de la actividad eléctrica generada por los potenciales de acción de las fibras musculares durante la contracción muscular. La señal EMG del bíceps, al igual que en otros músculos, está compuesta por una mezcla de frecuencias que representan la actividad eléctrica del músculo. 
+
+![image](https://github.com/user-attachments/assets/64cd6b0f-1520-4dd1-9f3b-83ae0e992abf)
+
+**Figura #06. Ubicación de los Electrodos en el Biceps EMG. Extraida de la guia de la práctica**
+
+Para capturar adecuadamente una señal EMG, es necesario aplicar el teorema de muestreo de Nyquist el cual explica el siguiente principio:
+
+
 
 
 
