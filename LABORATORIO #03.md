@@ -212,7 +212,7 @@ El análisis de las 37 ventanas de señal EMG revela una variabilidad considerab
   
 * El uso de la Transformada Rápida de Fourier (FFT) demuestra ser una herramienta analitica para verificar  la composición frecuencial de la señal EMG, pues al descomponer la señal en sus componentes de frecuencia, se puedo identificar las bandas de frecuencia dominantes de concentración de energía en las frecuencias bajas y medias, lo que es típico para la actividad muscular. 
 
-*La técnica de la electromiografía (EMG) si cumple con el hecho de evaluar la salud y función muscular como en nuestro caso fue el biceps, al medir la actividad eléctrica del músculo se lograron visualizar la eficacia de cada momento como lo fue la relajación y contracción mediante el procesamiento de señales.
+* La técnica de la electromiografía (EMG) si cumple con el hecho de evaluar la salud y función muscular como en nuestro caso fue el biceps, al medir la actividad eléctrica del músculo se lograron visualizar la eficacia de cada momento como lo fue la relajación y contracción mediante el procesamiento de señales.
 
 **7. Bibliografía**
 
