@@ -11,4 +11,3 @@ Laboratorio de Procesamiento Digítal de Señales
 Doc. Andrea Carolina Corredor Bedoya
 
 01 de Noviembre 2024
---------------------------------------------------------------
