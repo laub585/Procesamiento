@@ -22,3 +22,4 @@ Doc. Andrea Carolina Corredor Bedoya
 Analizar la variabilidad de la frecuencia cardíaca (HRV) utilizando la transformada wavelet para identificar cambios en las frecuencias características y analizar la dinámica temporal de la señal cardíaca. 
 
 ----
+**3. Introducción:**
