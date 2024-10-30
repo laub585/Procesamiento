@@ -18,3 +18,7 @@ Doc. Andrea Carolina Corredor Bedoya
 **Palabras Claves**: Condiciones fisiológicas, electrocardiograma, escalas de tiempo y frecuencia,  estado fisiológico, patrones de variabilidad, señales, Transformada Wavelet, Variabilidad de la Frecuencia Cardíaca (VFC).
 
 ----
+**2.Objetivo de la Práctica:**
+Analizar la variabilidad de la frecuencia cardíaca (HRV) utilizando la transformada wavelet para identificar cambios en las frecuencias características y analizar la dinámica temporal de la señal cardíaca. 
+
+----
