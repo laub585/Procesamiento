@@ -170,6 +170,39 @@ Para la realización de este laboratorio, se procedió a colocar los electrodos 
 **Figura #07. Representación esquemática de Posiciones de Electrodos V1, V2 , Tierra. Guiada de Neotecnia "**
 
 
+**3.2.3 Sistema de Adquisición de Datos DAQ:**
+
+Un sistema de adquisición de datos (DAQ) es esencial para capturar, procesar y analizar las señales eléctricas generadas por el corazón  durante una electrocardiografía (ECG). Este sistema actúa como un puente entre los electrodos colocados en el cuerpo y la programación donde se almacenan y analizan los datos [7].
+
+* **Componentes Clave de un Sistema DAQ para la Electrocardiográfia (ECG):**
+
+1. **Electrodos:** El electrodo es usado como el  conductor eléctrico que establece contacto con un material no metálico en un circuito. Es como un puente que permite que la corriente eléctrica fluya entre un circuito eléctrico y otro medio.
+En la técnica de la electromiografía (EMG) se utilizan electrodos para detectar señales eléctricas del musculo en estudio, para esto se utilizaron electrodos de superficie por que son menos invasivos, es decir, no necesitan ajugas y reducen el riesgo de infección, ademas de que son fáciles de posicionar en el musculo, su función principal es detectar y registrar la actividad eléctrica producida por los músculos.
+
+![image](https://github.com/user-attachments/assets/0d821206-7057-4073-a13c-fdc07d94a1d0) 
+
+**Figura #04.Electrodos de Superficie para Electromiográfia (EMG). Extraida de Oxdea**
+
+2. **Microcontrolador STM32:** El uso del microcontrolador stm32, fue útil ya que mediante este se  toma la adquisición de la señal es aqui donde se  configuraron los pines necesarios  para leer datos del sensor AD8232 de electromiográfia, logrando la comunicación entre la respuesta y la interfaz.
+
+![image](https://github.com/user-attachments/assets/3ed47807-bcd5-4c81-9b78-a7f8dc9c021c)
+
+**Figura #05.Periferico Programado desde la STM32. Extraida de CUBEID**
+
+3. **Sensor AD8232:** El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales EMG, el cual fue util debido a que la  EMG es una señal muy débil y está rodeada de ruido. El AD8232 utiliza una configuración diferencial para amplificar la diferencia de voltaje entre dos electrodos colocados en la piel. Esto permite rechazar el ruido común presente en ambos electrodos, mejorando significativamente la relación señal-ruido, pues cuando este realiza la tarea de amplificar lo hace en una amplia banda de frecuencias, lo que permite capturar los diferentes componentes de la señal EMG, desde las frecuencias bajas hasta las altas.
+
+![image](https://github.com/user-attachments/assets/bcd1edc9-e59e-4703-a961-0cc06f443f42)
+
+**Figura #06. Sensor AD8232 . Extraida de Componentes101**
+
+**Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
+
+A continuación, se muestra el sistema de adquisición haciendo uso de los componentes anteriores:
+
+![image](https://github.com/user-attachments/assets/7615366a-d0e6-4720-8827-5e1d109d464a)
+
+**Figura #08. Sistema de Adquisición de ECG. Elaboración propia**
+
 ----
 
 **Bibliografía:**
@@ -186,7 +219,7 @@ Para la realización de este laboratorio, se procedió a colocar los electrodos 
 
 [6].Electrocardiograma. (s/f). Fundación Española del Corazón. Recuperado el 31 de octubre de 2024, de https://fundaciondelcorazon.com/informacion-para-pacientes/metodos-diagnosticos/electrocardiograma.html
 
-
+[7].Riaño-Ruiz, L. M., & Riveros-Mestre, J. S. (2023). Sistema de adquisición de señales electrocardiográficas para visualizar el comportamiento cardíaco en corredores de 100 mt.
 
 
 
