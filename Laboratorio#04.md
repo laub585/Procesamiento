@@ -32,6 +32,8 @@ La bibliografía médica [1] subraya la importancia del sistema nervioso autóno
  
 El sistema nervioso autónomo se divide en dos ramas principales: **el sistema simpático y el sistema parasimpático**. El sistema simpático se activa en situaciones de peligro o estrés, desencadenando respuestas de "lucha o huida" que aumentan la frecuencia cardíaca que movilizan recursos energéticos para preparar al organismo ante posibles amenazas. En contraste, el sistema parasimpático promueve la relajación y la recuperación, reduciendo la frecuencia cardíaca y favoreciendo el descanso, contribuyendo así al mantenimiento del equilibrio.
 
+![Sistema Simpático Y Parasimpatico (1)](https://github.com/user-attachments/assets/644976d9-8b50-456a-9c9e-6131b9b21c44)
+**Figura #01. División del Sistema Nervioso Autónomo "Simpático y Parásimpatico"**
 
 
 
