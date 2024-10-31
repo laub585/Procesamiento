@@ -116,7 +116,16 @@ En este laboratorio, haciendo uso de la tecnica del electrocardiograma(ECG) la t
 
 
  **3.1.4 Diagrama de Flujo. :**
+ 
+A continuación, se presenta un diagrama de flujo que ilustra de manera gráfica y secuencial el proceso practico del presente laboratorio.
 
+
+
+
+
+
+
+**3.2   Adquisición de la señal ECG**
 
 
 
