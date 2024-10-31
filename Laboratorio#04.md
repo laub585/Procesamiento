@@ -200,7 +200,19 @@ La función principal de los electrodos en el ECG es captar y amplificar las dé
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
-Para implementar la adquisición de la señal, se tiene que tener encuenta 
+Para implementar la adquisición de la señal, es necesario aplicar el teorema de muestreo de Nyquist el cual explica el principio de establecer que la frecuencia de muestreo debe ser al menos el doble de la frecuencia máxima presente en la señal:
+
+![image](https://github.com/user-attachments/assets/29df32c4-3ded-429f-b518-a31e3095ac46)
+
+Donde:
+
+* fs es la frecuencia de muestreo.
+* 𝑓max es la frecuencia máxima de la señal.
+
+![image](https://github.com/user-attachments/assets/ef3ecbd3-5a53-4272-9422-7f30bfe4e7fa)
+
+Esto significa que la frecuencia de muestreo mínima recomendada para capturar adecuadamente la señal ECG es de 1000 Hz.
+  
 
 **3.2.3 Registro de la señal Electrocardiografica ECG:**
 
