@@ -50,7 +50,7 @@ Mientras que en el sistema parásimpatico, lo que desencadena es la relajación 
 
 * **Disminución de la fuerza de contracción:** Al igual que con la frecuencia cardíaca, el sistema parasimpático también disminuye la fuerza de contracción del corazón.
 
-<img width="395" alt="bgf-e1676736279720 (2)" src="https://github.com/user-attachments/assets/c0915200-996b-49fd-b573-fa11b49318c7">
+<img width="413" alt="bgf-e1676736279720 (2) (1)" src="https://github.com/user-attachments/assets/fa157556-6d01-4fb3-a6a5-45b861ac250c">
 
 **Figura #02. Efecto de la estimulación simpática y parasimpática sobre la frecuencia cardíaca.Extraído de Homo Medicus"**
   
