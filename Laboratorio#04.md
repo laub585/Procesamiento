@@ -121,13 +121,33 @@ A continuación, se presenta un diagrama de flujo que ilustra de manera gráfica
 
 
 
-
+**Figura #04. "**
 
 
 
 **3.2   Adquisición de la señal ECG**
 
+**¿Qué es la Técnica de Electrocardiografía (ECG)?**
 
+Según la Fundación Española del Corazón[6], define que la técnica de electrocardiografía cumple el principio de  registrar la actividad eléctrica del corazón que se produce en cada latido cardiaco. Esta actividad eléctrica se registra desde la superficie corporal del paciente y se dibuja en un papel mediante una representación gráfica o trazado, donde se observan diferentes ondas que representan los estímulos eléctricos de las aurículas y los ventrículos.
+
+Para esta técncia, se hace una segmentación por las siguientes fases que describe la actividad eléctrica del corazón:
+
+* **Onda P:** Representa la despolarización de las aurículas, es decir, la contracción de las cámaras superiores del corazón para enviar sangre a los ventrículos.
+
+* **Complejo QRS:** Representa la despolarización de los ventrículos, que son las cámaras inferiores del corazón. Esta es la contracción más fuerte y propulsa la sangre hacia el cuerpo y los pulmones.
+
+* **Onda Q:** Primera deflexión negativa del complejo.
+
+* **Onda R:** Primera deflexión positiva del complejo.
+  
+* **Onda S:** Segunda deflexión negativa del complejo (si existe).
+
+* **Onda T:** Representa la repolarización de los ventrículos, es decir, el momento en que las células del corazón se relajan y se preparan para la siguiente contracción.
+
+![WhatsApp Image 2024-10-31 at 7 07 49 AM (1)](https://github.com/user-attachments/assets/f9a3872c-f6d4-4f75-8659-e8da9fbf3ae6)
+
+**Figura #06. Representación esquemática de un Electrocardiograma y su composición por Complementos. (rodriguez. 2008.)"**
 
 ----
 
@@ -142,6 +162,10 @@ A continuación, se presenta un diagrama de flujo que ilustra de manera gráfica
 [4].Guzmán, J. E. O., & Romero, D. M. (2008). Variabilidad de la frecuencia cardiaca, una herramienta útil. Rev. Digital., Buenos Aires, 121.
 
 [5].Montoya, J. R. A. (2001). La transformada wavelet. Revista de la Universidad de Mendoza.
+
+[6].Electrocardiograma. (s/f). Fundación Española del Corazón. Recuperado el 31 de octubre de 2024, de https://fundaciondelcorazon.com/informacion-para-pacientes/metodos-diagnosticos/electrocardiograma.html
+
+
 
 
 
