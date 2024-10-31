@@ -202,9 +202,13 @@ La función principal de los electrodos en el ECG es captar y amplificar las dé
 
 A continuación, se muestra el sistema de adquisición haciendo uso de los componentes anteriores:
 
-![image](https://github.com/user-attachments/assets/7615366a-d0e6-4720-8827-5e1d109d464a)
 
-**Figura #08. Sistema de Adquisición de ECG. Elaboración propia**
+
+
+
+**Figura #11. Sistema de Adquisición de ECG. Elaboración propia**
+
+
 
 
 ----
