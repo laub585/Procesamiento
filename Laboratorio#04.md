@@ -242,6 +242,7 @@ Estos datos de la señal ECG, adquiridos por la STM32 se procesan en un tiempo d
 
 **Figura #15.Adquisición de los datos del archivo txt. Elaboración propia**
 
+**3.3 Pre - Procesamiento de la Señal**
 
 
 ----
