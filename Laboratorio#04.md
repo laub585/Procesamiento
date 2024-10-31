@@ -149,6 +149,8 @@ Para esta técncia, se hace una segmentación por las siguientes fases que descr
 
 **Figura #06. Representación esquemática de un Electrocardiograma y su composición por Complementos. (rodriguez. 2008.)"**
 
+
+
 ----
 
 **Bibliografía:**
