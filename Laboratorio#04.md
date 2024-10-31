@@ -27,4 +27,16 @@ A continuación, se detallará la metodología empleada en la ejecución del pre
 
 **3.1 Fundamentación Teórica:**
    **3.1.1  Actividad Simpática y Parasimpática del Sistema Nervioso Autónomo:**
-La 
+
+La bibliografía médica [1] subraya la importancia del sistema nervioso autónomo como un componente fundamental del sistema nervioso, encargado de funciones regulares involuntarias que son esenciales para la supervivencia del ser humano. Este sistema opera de manera automática, gestionando procesos vitales como la frecuencia cardíaca, la respiración, la digestión y la respuesta al estrés, sin requerir la inteligencia.
+ 
+
+
+
+
+
+----
+
+**Bibliografía:**
+[1].Báez, M. E. (2007). Visión clásica del sistema nervioso autónomo. Universidad de La Habana.
+
