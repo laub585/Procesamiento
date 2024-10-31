@@ -149,6 +149,20 @@ Para esta técncia, se hace una segmentación por las siguientes fases que descr
 
 **Figura #06. Representación esquemática de un Electrocardiograma y su composición por Complementos. (rodriguez. 2008.)"**
 
+Para desarrollar la técnica en mención, se tienen en cuenta los siguientes factores que resultan importantes para los resultados:
+
+**3.2.2  Preparación del Sujeto:**
+
+Antes de comenzar el registro de señales ECG, es crucial preparar adecuadamente al sujeto para garantizar la calidad de los datos obtenidos. Esta etapa incluye una serie de paso a paso que se muestra acontinuación:
+
+**1. Limpieza de la piel:** La piel se limpia con alcohol para eliminar suciedad que puedan interferir con la señal.
+
+**2. Colocación de electrodos:** Los electrodos se colocan sobre la piel de acuerdo a la ubicación de las derivaciones a evaluar. La posición de los electrodos es crucial para obtener una señal de calidad.
+
+**3.Fijación:** Los electrodos se fijan a la piel con cinta adhesiva o gel conductor para asegurar un buen contacto eléctrico.
+
+**Nota Importante:** La preparación del paciente es un aspecto fundamental para garantizar la calidad de los datos obtenidos en una EMG. Un buen protocolo de preparación minimizará el ruido y las interferencias en la señal, lo que permitirá obtener resultados más precisos y confiables.
+
 
 
 ----
