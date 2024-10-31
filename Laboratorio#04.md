@@ -145,7 +145,7 @@ Para esta técncia, se hace una segmentación por las siguientes fases que descr
 
 * **Onda T:** Representa la repolarización de los ventrículos, es decir, el momento en que las células del corazón se relajan y se preparan para la siguiente contracción.
 
-![WhatsApp Image 2024-10-31 at 7 07 49 AM (1)](https://github.com/user-attachments/assets/f9a3872c-f6d4-4f75-8659-e8da9fbf3ae6)
+![image](https://github.com/user-attachments/assets/8a87aa5b-a163-4f87-a295-4ce85d43fe67)
 
 **Figura #06. Representación esquemática de un Electrocardiograma y su composición por Complementos. (rodriguez. 2008.)"**
 
