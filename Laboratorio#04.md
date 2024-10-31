@@ -177,23 +177,26 @@ Un sistema de adquisición de datos (DAQ) es esencial para capturar, procesar y 
 * **Componentes Clave de un Sistema DAQ para la Electrocardiográfia (ECG):**
 
 1. **Electrodos:** El electrodo es usado como el  conductor eléctrico que establece contacto con un material no metálico en un circuito. Es como un puente que permite que la corriente eléctrica fluya entre un circuito eléctrico y otro medio.
-En la técnica de la electromiografía (EMG) se utilizan electrodos para detectar señales eléctricas del musculo en estudio, para esto se utilizaron electrodos de superficie por que son menos invasivos, es decir, no necesitan ajugas y reducen el riesgo de infección, ademas de que son fáciles de posicionar en el musculo, su función principal es detectar y registrar la actividad eléctrica producida por los músculos.
+
+En la técnica del electrocardiograma (ECG) se utilizan electrodos para detectar las señales eléctricas producidas por el corazón. Estos electrodos se colocan en la superficie de la piel, haciendo de esta una técnica no invasiva y segura para el paciente. La colocación de estos electrodos es relativamente sencilla y permite registrar la actividad eléctrica del corazón desde diferentes ángulos, proporcionando así una imagen completa de su funcionamiento en nuestro caso de V1 y V2 .
+
+La función principal de los electrodos en el ECG es captar y amplificar las débiles señales eléctricas generadas por el corazón y transmitirlas a un dispositivo que las registra en forma de ondas. Estas ondas, conocidas como trazado electrocardiográfico, proporcionan información valiosa sobre el ritmo cardíaco, la conducción eléctrica y la estructura del corazón
 
 ![image](https://github.com/user-attachments/assets/0d821206-7057-4073-a13c-fdc07d94a1d0) 
 
-**Figura #04.Electrodos de Superficie para Electromiográfia (EMG). Extraida de Oxdea**
+**Figura #08.Electrodos de Superficie. Extraida de Oxdea**
 
 2. **Microcontrolador STM32:** El uso del microcontrolador stm32, fue útil ya que mediante este se  toma la adquisición de la señal es aqui donde se  configuraron los pines necesarios  para leer datos del sensor AD8232 de electromiográfia, logrando la comunicación entre la respuesta y la interfaz.
 
 ![image](https://github.com/user-attachments/assets/3ed47807-bcd5-4c81-9b78-a7f8dc9c021c)
 
-**Figura #05.Periferico Programado desde la STM32. Extraida de CUBEID**
+**Figura #09.Periferico Programado desde la STM32. Extraida de CUBEID**
 
-3. **Sensor AD8232:** El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales EMG, el cual fue util debido a que la  EMG es una señal muy débil y está rodeada de ruido. El AD8232 utiliza una configuración diferencial para amplificar la diferencia de voltaje entre dos electrodos colocados en la piel. Esto permite rechazar el ruido común presente en ambos electrodos, mejorando significativamente la relación señal-ruido, pues cuando este realiza la tarea de amplificar lo hace en una amplia banda de frecuencias, lo que permite capturar los diferentes componentes de la señal EMG, desde las frecuencias bajas hasta las altas.
+3. **Sensor AD8232:** El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales ECG, Este  incorpora amplificadores de instrumentación, filtros y otras características que lo hacen ideal para amplificar y limpiar las señales eléctricas débiles del corazón. Al actuar como preprocesador, el AD8232 prepara la señal ECG para su digitalización y posterior análisis, permitiendo obtener información precisa sobre el ritmo cardíaco, la conducción eléctrica y la estructura del corazón. Su alta ganancia, alta impedancia de entrada y bajo ruido lo convierten en una elección popular para la construcción de circuitos de ECG.
 
 ![image](https://github.com/user-attachments/assets/bcd1edc9-e59e-4703-a961-0cc06f443f42)
 
-**Figura #06. Sensor AD8232 . Extraida de Componentes101**
+**Figura #10. Sensor AD8232 . Extraida de Componentes101**
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
@@ -202,6 +205,7 @@ A continuación, se muestra el sistema de adquisición haciendo uso de los compo
 ![image](https://github.com/user-attachments/assets/7615366a-d0e6-4720-8827-5e1d109d464a)
 
 **Figura #08. Sistema de Adquisición de ECG. Elaboración propia**
+
 
 ----
 
