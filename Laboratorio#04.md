@@ -165,7 +165,7 @@ Antes de comenzar el registro de señales ECG, es crucial preparar adecuadamente
 
 Para la realización de este laboratorio, se procedió a colocar los electrodos en las derivaciones precordiales V1 y V2, ubicadas en el cuarto espacio intercostal a la derecha e izquierda del esternón respectivamente, son fundamentales para explorar la activación eléctrica del septo interventricular. Esta zona, que separa los ventrículos izquierdo y derecho, es de gran importancia ya que cualquier alteración en su conducción puede manifestarse en estas derivaciones. La colocación precisa de V1 y V2 es crucial, y se utiliza el ángulo de Louis como punto de referencia que tiene como objetivo simular un electrocardiograma (ECG) estándar, permitiendo la medición individualizada de cada derivación, es importante recordar que el electrodo de tierra, colocado debajo de la costilla, sirve como referencia eléctrica, minimizando el ruido y asegurando una señal limpia y precisa. 
 
-![image](https://github.com/user-attachments/assets/a381b8e9-7e07-4d62-91fa-4388d9bc5930)
+![WhatsApp Image 2024-10-31 at 7 38 18 AM (1)](https://github.com/user-attachments/assets/ac7fbca9-cca2-435b-b89a-6c75b13ba511)
 
 **Figura #07. Representación esquemática de Posiciones de Electrodos V1, V2 , Tierra. Guiada de Neotecnia "**
 
