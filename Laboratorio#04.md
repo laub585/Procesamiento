@@ -63,7 +63,7 @@ La variabilidad de la frecuencia cardíaca (HRV) es una medida cuantitativa de l
 Para comprende esta variabilidaad, normalmente lo que se hace es hacer uso de la técnica del electrocardiograma (ECG) con el fin de de medir la actividad eléctrica del corazón y permite a su vez determinar el normal funcionamiento del mismo.  Para medir estas fluctuaciones cardiacas, se tiene en cuenta condiciones derivadas de  los procesos de los sistemas nerviosos simpático y parasimpático (Maud y Foster, 1991). Las fluctuaciones de la frecuencia cardiaca son comúnmente valoradas por las mediciones del intervalo R­R, mediante la variación del tiempo de este intervalo es comúnmente llamada Variabilidad de la Frecuencia Cardiaca (HRV) como se
 muestran acontinuación:
 
-![WhatsApp Image 2024-10-30 at 9 46 06 PM (1)](https://github.com/user-attachments/assets/dc2b6b27-e341-49bc-96ec-86a33d42c2a2)
+![WhatsApp Image 2024-10-30 at 9 46 06 PM (1) (1)](https://github.com/user-attachments/assets/0bf7f50e-e55a-49ae-939d-ec358a6f9f59)
 
 **Figura #03. Representación esquemática de un intervalo R­R Tomado de: Maud PJ. , Foster C. Physiological assessment of human fitness.
 Second Edition. 2006; (41)"**
