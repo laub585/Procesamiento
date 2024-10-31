@@ -200,19 +200,22 @@ La función principal de los electrodos en el ECG es captar y amplificar las dé
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
+Para implementar la adquisición de la señal, se tiene que tener encuenta 
+
 **3.2.3 Registro de la señal Electrocardiografica ECG:**
 
 Para el registro de la señal Electrocardiográfica, se captura la actividad eléctrica del corazón (ECG) de manera continua a lo largo de toda la prueba. Esta señal biológica es adquirida por la STM32 y los datos recolectados son enviados en tiempo real a una interfaz gráfica desarrollada en Python utilizando Qt Designer. Esta interfaz visual permite al usuario observar instantáneamente las variaciones en la señal EMG, facilitando así el análisis y la interpretación de los resultados durante el experimento.
 
 A continuación, se muestra una parte del código de la STM32, donde se implementa un sistema básico de adquisición de señales EMG. En este apartado, se configuran varios periféricos que se encargan de registrar datos del sensor mediante un ADC (Convertidor Analógico-Digital) y transmitirlos a través de USB utilizando la clase CDC (Communication Device Class). Se definen variables para manejar el ADC, DMA y un temporizador, que genera interrupciones a intervalos definidos y asi se envía periódicamente a una computadora a través de una interfaz de comunicación realizada por Q-designer.
 
+![image](https://github.com/user-attachments/assets/3b883070-9047-4fc5-bddc-fefccfd1420a)
+
+**Figura #11.Programación de la STM32. Elaboración propia**
+
+Estos datos de la señal ECG, adquiridos por la STM32 se procesan en un tiempo de 5 minutos (300seg)  y como se decia anteriormente son enviados a una interfaz gráfica desarrollada mediante el lenguaje de  Python que se encarga de visualizarlos. Esta interfaz, creada con la librería PyQt, presenta la señal EMG en forma de una gráfica que se actualiza constantemente, permitiendo al monitorear la actividad electrica del corazón durante la contracción muscular, los datos adquiridos se almacenan en un archivo txt.
 
 
-
-
-
-
-**Figura #11. Sistema de Adquisición de ECG. Elaboración propia**
+**Figura #12. Sistema de Adquisición de ECG. Elaboración propia**
 
 
 
