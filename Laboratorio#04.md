@@ -200,7 +200,13 @@ La función principal de los electrodos en el ECG es captar y amplificar las dé
 
 **Nota Importante:** Tenga en cuenta que en el siguiente enlace encontrara  el Datasheet del Sensor AD8232 https://www.alldatasheet.com/datasheet-pdf/pdf/527942/AD/AD8232.html
 
-A continuación, se muestra el sistema de adquisición haciendo uso de los componentes anteriores:
+**3.2.3 Registro de la señal Electrocardiografica ECG:**
+
+Para el registro de la señal Electrocardiográfica, se captura la actividad eléctrica del corazón (ECG) de manera continua a lo largo de toda la prueba. Esta señal biológica es adquirida por la STM32 y los datos recolectados son enviados en tiempo real a una interfaz gráfica desarrollada en Python utilizando Qt Designer. Esta interfaz visual permite al usuario observar instantáneamente las variaciones en la señal EMG, facilitando así el análisis y la interpretación de los resultados durante el experimento.
+
+A continuación, se muestra una parte del código de la STM32, donde se implementa un sistema básico de adquisición de señales EMG. En este apartado, se configuran varios periféricos que se encargan de registrar datos del sensor mediante un ADC (Convertidor Analógico-Digital) y transmitirlos a través de USB utilizando la clase CDC (Communication Device Class). Se definen variables para manejar el ADC, DMA y un temporizador, que genera interrupciones a intervalos definidos y asi se envía periódicamente a una computadora a través de una interfaz de comunicación realizada por Q-designer.
+
+
 
 
 
