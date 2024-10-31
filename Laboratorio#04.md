@@ -70,9 +70,9 @@ Second Edition. 2006; (41)"**
 
 * **¿Cómo Se Mide La Variabilidad de la Frecuencia Cardiaca (HRV)?**
   
-Para medir la variabilidad de la frecuencia cardiaca (HRV), se puede realizar diferentes métodos de medidas. Entre ellos encontramos medidas estáticas que se dan en el análisis del tiempo dominante, o también se puede emplear métodos geométricos y análisis espectral que se da mediante el análisis de la frecuencia dominante.
+Para medir la variabilidad de la frecuencia cardiaca (HRV), se puede realizar diferentes métodos de medidas. Entre ellos encontramos medidas estáticas que se dan en el análisis del tiempo dominante, o también se puede emplear métodos geométricos y análisis espectral que se da mediante el análisis de la frecuencia dominante[4].
 
-**Análisis del Tiempo Dominante:**
+1. **Análisis del Tiempo Dominante:**
 
 El análisis del tiempo dominio en la variabilidad de la frecuencia cardíaca (HRV) es una herramienta fundamental al analizar directamente los intervalos RR (tiempo entre dos latidos consecutivos), se pueden obtener diversas variables que proporcionan información valiosa sobre la dinámica cardíaca:
 
@@ -82,7 +82,7 @@ El análisis del tiempo dominio en la variabilidad de la frecuencia cardíaca (H
 
 Para realizar los cálculos de HRV, es recomendado utilizar no menos de 6 intervalos para comprenderme a mayor profundidad las  diferencias significativas (Task Force of the European Society of Cardiology & the North American Society of Pacing and Electrophysiology, 1996)
 
-**Análisis Espectral:**
+2. **Análisis Espectral:**
 
 El análisis espectral se da mediante las frecuencias arrojadas por la técnica del Electrocardiograma (ECG),Este método de análisis se conoce como el espectro permite entender aún más los efectos de los sistemas nervioso simpático y parasimpático sobre la HRV (Akselrod,
 1985). Los principales parámetros de medida en el análisis espectral son:
@@ -93,6 +93,29 @@ El análisis espectral se da mediante las frecuencias arrojadas por la técnica 
   
 * **Alta frecuencia (HF):** Componente sincronizado con la frecuencia de respiración. Está sobre un rango de 0.2 a 0.5 Hz dependiendo de la frecuencia respiratoria.
 
+ **3.1.3 Transformada Wavelet:**
+ 
+La transformada wavelet es una técnica matemática que descompone una señal en una serie de funciones básicas llamadas wavelets. A diferencia de la transformada de Fourier, que descompone una señal en componentes sinusoidales de diferentes frecuencias, las wavelets ofrecen una representación más localizada en el tiempo y la frecuencia, lo que las hace particularmente útiles para analizar señales no estacionarias como las biológicas.
+
+Las wavelets son funciones con una duración limitada y un valor promedio cercano a cero. Su forma puede variar, lo que permite adaptar el análisis a diferentes tipos de señales. Al descomponer una señal en wavelets, se obtiene una representación que revela tanto los componentes de baja frecuencia (tendencias a largo plazo) como los de alta frecuencia (detalles locales) [5].
+
+En este laboratorio, haciendo uso de la tecnica del electrocardiograma(ECG) la transformada wavelet permite descomponer una señal compleja en diferentes frecuencias y localizaciones temporales, lo que facilita la identificación de características específicas y la detección de anomalías.
+
+**Tipos de Wavelet para Señales Biologicas:**
+
+* **Wavelet de Haar:** Una de las wavelets más simples, útil para detectar discontinuidades y cambios bruscos en la señal.
+
+* **Wavelets de Daubechies:** Wavelets con diferentes niveles de regularidad, lo que las hace versátiles para una amplia gama de aplicaciones.
+
+* **Wavelet de Morlet:** Wavelet compleja con una forma similar a una onda sinusoidal amortiguada, adecuada para analizar señales con componentes tanto sinusoidales como transitorios.
+
+* **Wavelet de Symlet:** Similar a la wavelet de Daubechies, pero con simetría alrededor de cero.
+  
+* **Wavelet de Coiflet:*** Wavelet con un número de momentos nulos, lo que la hace útil para aproximar funciones suaves.
+
+
+
+ **3.1.4 Diagrama de Flujo. :**
 
 
 
@@ -107,5 +130,10 @@ El análisis espectral se da mediante las frecuencias arrojadas por la técnica 
 
 [3]. Medicus, H. (2024, junio 22). Efecto de la estimulación simpática y parasimpática sobre la frecuencia cardíaca. Homo medicus. https://homomedicus.com/efecto-de-la-estimulacion-simpatica-y-parasimpatica-sobre-la-frecuencia-cardiaca/
 
-[4].
+[4].Guzmán, J. E. O., & Romero, D. M. (2008). Variabilidad de la frecuencia cardiaca, una herramienta útil. Rev. Digital., Buenos Aires, 121.
+
+[5].Montoya, J. R. A. (2001). La transformada wavelet. Revista de la Universidad de Mendoza.
+
+
+
 
