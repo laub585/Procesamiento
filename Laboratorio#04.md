@@ -226,9 +226,21 @@ A continuación, se muestra una parte del código de la STM32, donde se implemen
 
 Estos datos de la señal ECG, adquiridos por la STM32 se procesan en un tiempo de 5 minutos (300seg)  y como se decia anteriormente son enviados a una interfaz gráfica desarrollada mediante el lenguaje de  Python que se encarga de visualizarlos. Esta interfaz, creada con la librería PyQt, presenta la señal EMG en forma de una gráfica que se actualiza constantemente, permitiendo al monitorear la actividad electrica del corazón durante la contracción muscular, los datos adquiridos se almacenan en un archivo txt.
 
+![image](https://github.com/user-attachments/assets/bbd6e58f-6f8e-41bd-987f-8cbb60c506ac)
 
-**Figura #12. Sistema de Adquisición de ECG. Elaboración propia**
+**Figura #12.Interfaz Gráfica para la Adquisición de ECG. Elaboración propia**
 
+![image](https://github.com/user-attachments/assets/7b9ec629-a56f-448a-8560-d2733bd0b6d1)
+
+**Figura #13. Programación del tiempo de toma de la Adquisición de ECG. Elaboración propia**
+
+![image](https://github.com/user-attachments/assets/5089c603-bb9c-4cfd-844a-556491242013)
+
+**Figura #14.Graficación de la Adquisición de ECG en los 5 minutos. Elaboración propia**
+
+![image](https://github.com/user-attachments/assets/4e69c456-a546-4edb-88e6-8a8855c0bcbc)
+
+**Figura #15.Adquisición de los datos del archivo txt. Elaboración propia**
 
 
 
