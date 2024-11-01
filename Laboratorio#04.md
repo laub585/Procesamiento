@@ -292,7 +292,9 @@ Con los resultados de la media de los intervalos RR, se muestra como un parámet
 
 En cuanto a la desviación estandar, esta logra representar  los intervalos RR cuantifica la variabilidad en los tiempos entre latidos consecutivos, proporcionando un indicador de la estabilidad del ritmo cardíaco, en este caso la equivalencia de  36,2 ms en los intervalos RR proporciona información valiosa sobre la regularidad del ritmo cardíaco y la influencia del sistema nervioso autónomo. 
 
-El análisis,
+En resumen, a partir de los datos presentados (FC: 94,63 lpm y desviación estándar de los intervalos RR: 36,2 ms), podemos inferir que la variabilidad de la frecuencia cardíaca del individuo evaluada es moderada. Esto sugiere un equilibrio relativo entre los sistemas nerviosos simpático y parasimpático, lo que indica una capacidad moderada del corazón para adaptarse a diferentes demandas fisiológicas. Sin embargo, los datos sugieren una variabilidad del ritmo cardíaco dentro de un rango normal,
+
+**3.5 Aplicación de transformada Wavelet:**
 
 
 ----
