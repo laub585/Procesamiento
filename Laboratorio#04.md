@@ -281,11 +281,11 @@ Lo que sustenta el código anterior, es la detección de los picos en la señal 
 
 ![image](https://github.com/user-attachments/assets/06217ac6-84f0-4afd-a776-a8972b39f312)
 
-**Figura #18. Resultados de lo valores calculados de los Picos RR .Elaboración propia**
+**Figura #19. Resultados de lo valores calculados de los Picos RR .Elaboración propia**
 
 ![image](https://github.com/user-attachments/assets/1327f0a2-3618-4d50-addb-649a1d6956f1)
 
-**Figura #18. Resultados de lo valores de la media y desviación estandar Picos RR .Elaboración propia**
+**Figura #20. Resultados de lo valores de la media y desviación estandar Picos RR .Elaboración propia**
 
 **3.4 Análisis de la HRV en el dominio del tiempo**
 
