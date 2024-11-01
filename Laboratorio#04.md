@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/866bb4ce-ad70-43a6-9a8e-6a584c5093f2)
 
-Informe #04, “Variabilidad de la Frecuencia Cardiaca Usando la Transformada Wavelet ” :
+**Informe #04, “Variabilidad de la Frecuencia Cardiaca Usando la Transformada Wavelet ” :**
 
 Lauren Blanco, Sofía Suárez – 5600585 (est.lauren.blanco@unimilitar.edu.co)
 
@@ -19,13 +19,16 @@ Doc. Andrea Carolina Corredor Bedoya
 
 ----
 **2.Objetivo de la Práctica:**
+
 Analizar la variabilidad de la frecuencia cardíaca (HRV) utilizando la transformada wavelet para identificar cambios en las frecuencias características y analizar la dinámica temporal de la señal cardíaca. 
 
 ----
 **3. Procedimiento, Desarrollo y Análisis:**
+
 A continuación, se detallará la metodología empleada en la ejecución del presente experimento. Se describirá paso a paso el procedimiento seguido hasta la obtención y análisis de los datos:
 
 **3.1 Fundamentación Teórica:**
+
    **3.1.1  Actividad Simpática y Parasimpática del Sistema Nervioso Autónomo y Relación con la Frecuencia Cardiaca:**
 
 La bibliografía médica [1], subraya la importancia del sistema nervioso autónomo (SNA) como un componente fundamental del sistema nervioso, encargado de funciones regulares involuntarias que son esenciales para la supervivencia del ser humano. Este sistema opera de manera automática, gestionando procesos vitales como la frecuencia cardíaca, la respiración, la digestión y la respuesta al estrés, sin requerir la inteligencia.
@@ -325,12 +328,21 @@ Este rango de frecuencias permite capturar tanto los elementos de baja frecuenci
 
 Como se observa en el Espectograma anterior, se representa como a energía de una señal (en este caso, la HRV) se distribuye en diferentes frecuencias a lo largo del tiempo. En el contexto de la HRV, nos permite observar cómo cambian los patrones de variabilidad del ritmo cardíaco a lo largo del registro de los 5 minutos, la imagen en la variabilidad de la frecuencia muestra  una variabilidad considerable en la potencia de las diferentes frecuencias a lo largo del tiempo. Esto es típico de la VFC, ya que refleja la dinámica del sistema nervioso autónomo y su influencia en el ritmo cardíaco. En este contexto, la imágen demuestra que hay mayor predominancia en el color azul es decir representa una baja potencia en las frecuencias correspondientes lo que sugiere una menor actividad simpática, es importante resaltar que  hay presencia de todas las bandas de frecuencia por tanto en las bandas de baja frecuencia (asociadas al sistema parasimpático) ya que hay presencia de los colores rojos en el intervalo de 100 a 150 , esto podría indicar un equilibrio entre ambos sistemas.
 
+---
+**4. Análisis de Resultados:**
 
+---
+**5. Conclusiones:**
 
+1. Al descomponer la señal de HRV en diferentes escalas de tiempo y frecuencia, la wavelet  de Morlet  nos permitió identificar cambios sutiles en la variabilidad cardíaca que podrían pasar desapercibidos en un análisis de dominio del tiempo más tradicional.
 
-----
+2. La variabilidad de la frecuencia cardíaca (VFC) y las fluctuaciones del segmento RR son medidas que reflejan los cambios en el tiempo entre los latidos del corazón. Estos cambios están directamente relacionados con la actividad del sistema nervioso autónomo, que controla funciones involuntarias como la frecuencia cardíaca.
 
-**Bibliografía:**
+3. Para obtener resultados precisos en el análisis de la variabilidad de la frecuencia cardíaca (VFC), se aplican rigurosos procesos de preprocesamiento a la señal electrocardiográfica. Mediante el uso de filtros y algoritmos digitales de detección de picos R, se elimina el ruido y se Identificaron con precisión los latidos cardíacos. Estos datos permitieron calcular los intervalos RR y, a partir de ellos, los índices de variabilidad cardíaca, proporcionando una evaluación precisa de la modulación autonómica del corazón.
+
+---
+
+**6.Bibliografía:**
 
 [1].Báez, M. E. (2007). Visión clásica del sistema nervioso autónomo. Universidad de La Habana.
 
