@@ -299,6 +299,34 @@ En resumen, a partir de los datos presentados (FC: 94,63 lpm y desviación está
 
 **3.5 Aplicación de transformada Wavelet:**
 
+Como se merciono en el paragrafo 3.1.3 sobre los tipos de transformada wavelet, se hizo la selección de trabajar con el wavelet de Morlet para analizar la HRV, la ventaja de la combinación de onda sinusoidal y gaussiana le otorga propiedades únicas para analizar señales tanto en el dominio del tiempo como en el de la frecuencia, lo que permite analizar la señal con alta resolución en frecuencias bajas y alta resolución en frecuencias altas, lo cual es ideal para la HRV, donde se encuentran componentes de baja frecuencia (relacionados con el sistema nervioso parasimpático) y alta frecuencia ( relacionados con el sistema nervioso simpático). Es decir, La wavelet de Morlet puede adaptarse a cambios en la frecuencia y la amplitud de la señal a lo largo del tiempo, lo que la hace especialmente adecuada para el análisis de la HRV.
+
+La aplicación de la CWT, se aplica con el fin de descomponer en coeficientes la amplitud de la wavelet en una escala (frecuencia) y una posición (tiempo) específicas.Esto se ubica en un espectograma donde el eje de las abscisas representa el tiempo, el eje de las ordenadas representa la frecuencia y el color o intensidad de cada punto representa la magnitud del coeficiente de wavelet en esa posición tiempo- frecuencia.
+
+Para este se trabajo en un rango de frecuencia de interés  que corresponden especificamente de la variabilidad de la frecuencia cardiaca (HRV) que captura los componentes principales de la señal cardiaca:
+
+**1.Frecuencias bajas (0.04 a 0.15 Hz):** Este rango se utiliza para capturar las variaciones lentas de la señal ECG, como los cambios en la línea de base y las ondas T y P. Las ondas T representan la repolarización ventricular y las ondas P representan la despolarización auricular. Estas ondas son más lentas y requieren un rango de frecuencia bajo para su detección adecuada.
+
+**2.Frecuencias intermedias a altas (0.15 a 0.4Hz):** Dentro de este rango se encuentra el complejo QRS, que es el componente de mayor frecuencia en el ECG, con un pico característico en el espectro. Este complejo representa la despolarización ventricular, un evento rápido en el ciclo cardíaco que requiere una frecuencia más alta para capturar su detalle.
+
+Este rango de frecuencias permite capturar tanto los elementos de baja frecuencia, asociados a las ondas P y T, como los elementos de alta frecuencia del complejo QRS, proporcionando una representación completa de la actividad eléctrica del corazón.
+
+![image](https://github.com/user-attachments/assets/18156b80-93e0-4fa9-9b56-2dd78a357d10)
+
+**Figura #21. Programación de la transformada de wavelet Morlet con análisis de banda alta y banda baja.Elaboración propia**
+
+![image](https://github.com/user-attachments/assets/33b51ac7-b19f-4ade-aeb4-0ad564b096d6)
+
+**Figura #22. Programación de la construcción del espectograma.Elaboración propia**
+
+![image](https://github.com/user-attachments/assets/bf8606cc-9fbf-46c3-a7ee-3b611eff8a48)
+
+**Figura #23. Espectograma de HRV usando Wuavelet Continua Morlet.Elaboración propia**
+
+Como se observa en el Espectograma anterior, se representa como a energía de una señal (en este caso, la HRV) se distribuye en diferentes frecuencias a lo largo del tiempo. En el contexto de la HRV, nos permite observar cómo cambian los patrones de variabilidad del ritmo cardíaco a lo largo del registro de los 5 minutos, la imagen en la variabilidad de la frecuencia muestra  una variabilidad considerable en la potencia de las diferentes frecuencias a lo largo del tiempo. Esto es típico de la VFC, ya que refleja la dinámica del sistema nervioso autónomo y su influencia en el ritmo cardíaco. En este contexto, la imágen demuestra que hay mayor predominancia en el color azul es decir representa una baja potencia en las frecuencias correspondientes lo que sugiere una menor actividad simpática, es importante resaltar que  hay presencia de todas las bandas de frecuencia por tanto en las bandas de baja frecuencia (asociadas al sistema parasimpático) ya que hay presencia de los colores rojos en el intervalo de 100 a 150 , esto podría indicar un equilibrio entre ambos sistemas.
+
+
+
 
 ----
 
