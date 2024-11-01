@@ -358,6 +358,10 @@ Como se observa en el Espectograma anterior, se representa como a energía de un
 
 [7].Riaño-Ruiz, L. M., & Riveros-Mestre, J. S. (2023). Sistema de adquisición de señales electrocardiográficas para visualizar el comportamiento cardíaco en corredores de 100 mt.
 
+[8].Martínez, J. P., & Olmos, S. Sistema de Detección de Puntos Significativos de la señal ECG basado en la Transformada Wavelet. Dep. de Ingeniería Electrónica y Comunicaciones. Univ. de Zaragoza.
+
+[9].Peña, J. (2004). Espectrogramas basados en funciones Wavelets. Museo Nacional de Ciencias Naturales Madrid.
+
 
 
 
