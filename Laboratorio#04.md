@@ -253,17 +253,21 @@ En este laboratorio, se trabajo haciendo uso de filtros IIR (Respuesta Impulsion
 
 En primera instancia se hace uso de un filtro IIR (Butterworth) Pasa - Banda que permite el paso de señales dentro de un rango específico de frecuencias, mientras que atenúa las señales fuera de ese rango.
 
-* **¿Cómo Funciona?**
-  
-1.  Se hizo selección de una banda de frecuencia de interés, delimitada por una frecuencia de corte inferior (65HZ) y una frecuencia de corte superior (200hz).
+Con lo anterior, lo que se hizo fue lo siguiente :
 
-2.  
-3. 
-4.  
+1. Se hizo selección de una banda de frecuencia de interés, delimitada por una frecuencia de corte inferior (65HZ) y una frecuencia de corte superior (200hz), es decir, estas frecuencias determinarán qué componentes de frecuencia se permitirán pasar y cuáles se atenuarán.
+
+2. Se indica que la frecuencia de muestreo es de 1000 Hz, lo que significa que se toman 1000 muestras por segundo.
+
+3. Este filtro Butterworth Pasa - Banda es de cuarto orden. Esto significa que el filtro tendrá cuatro elementos de retardo, lo que da como resultado una respuesta de frecuencia más compleja en comparación con un filtro de orden inferior.
+
 
 ![image](https://github.com/user-attachments/assets/709f61ff-baa6-4578-9f12-6953d301d977)
 
 ![image](https://github.com/user-attachments/assets/fe04e4e8-9df8-4421-9925-b3581cacce7c)
+
+**Figura #16. Programación Del Desarrollo del Filtro .Elaboración propia**
+
 
 
 
