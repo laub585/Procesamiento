@@ -337,6 +337,28 @@ Como se observa en el Espectograma anterior, se representa como a energía de un
 ---
 **4. Análisis de Resultados:**
 
+Comenzando con el análisis de los picos encontrados después de separar la señal de 300 segundos en intervalos de 10 segundos, encontramos que los picos R están aproximadamente en un valor de 0.15 en los valores normalizados, lo que indica el punto máximo de este pico R, sabiendo que debe ser mayor que todas las ondas, incluyendo la onda P y la onda T. A partir de esta información, se calculó la media de todos los intervalos R-R, resultando en un valor de 0.604 segundos. Con esta media, se puede determinar que la frecuencia cardíaca es de 99.34 latidos por minuto, lo cual representa una frecuencia normal ya que está dentro del rango de 60 a 100 bpm.
+
+Respecto a la desviación estándar, se obtuvo un valor de 0.362 segundos, lo cual indica una alta variabilidad, señal de una respuesta activa del sistema nervioso autónomo, dado que el corazón adapta constantemente su ritmo ante diversas situaciones. Además, a medida que pasa el tiempo, las tomas generadas por el sensor se vuelven más estables, lo que permite un mayor detalle en el electrocardiograma.
+
+Para el análisis del espectrograma, este representa gráficamente el contenido de frecuencias de una señal a lo largo del tiempo. En el caso de un electrocardiograma, permite observar cómo las diferentes frecuencias varían en el tiempo, facilitando la identificación de los componentes frecuenciales de la señal cardíaca. En la banda de baja frecuencia, definida en el rango general de 0.04 a 0.15 Hz, se observa la actividad del sistema nervioso autónomo, especialmente del componente simpático. Esto se refleja en ciertos colores rojizos en esa frecuencia, que indican un aumento en la actividad de frecuencias, posiblemente por factores externos o la activación del sistema nervioso simpático.
+
+Para la banda de alta frecuencia, ubicada un poco por encima de la banda de baja frecuencia, se refleja la actividad del sistema nervioso parasimpático, el cual es responsable del periodo de relajación y reposo. Cualquier color rojizo en esta banda indicaría dicho estado de relajación y reposo.
+
+Finalmente, al analizar el cambio en la potencia espectral, se observa que la mayor parte de los colores rojizos se concentra en la banda de baja frecuencia, lo que sugiere un aumento en la actividad del sistema nervioso simpático.
+
+**- ¿Qué diferencias se observan entre los análisis en el dominio del tiempo y eldominio tiempo-frecuencia?** 
+
+Para el dominio de tiempo este se basa en como cambian las señales a lo largo del tiempo esto mirándolo por métricas como el intervalo r-r o la frecuencia cardiaca promedio. Mientras que en el dominio tiempo-frecuencia lo observamos mediante el espectrograma de la transformada wavelet y este nos proporciona gráfica de cómo las diferentes frecuencias de una señal cambian con el tiempo y esta también permite observar la dinámica de las componentes de la señal, identificando variaciones en la actividad de diferentes sistemas, como el simpático y parasimpático, a lo largo de la grabación.
+
+**- ¿Qué efecto tiene el uso de diferentes funciones wavelet en los resultados delanalisis?**
+
+Al usar diferentes funciones wavelet afectara significativamente el resultado debido a que cada wavelet tienes características de resolución en tiempo y frecuencia es decir unas wavelets pueden llegar a ofrecernos mejor resolución temporal mientras que otras pueden ser mas adecuadas para la resolución de la frecuencia. Otro factor importante puede ser la sensibilidad ya que dependiendo de la forma de dicha wavelet esta puede llegar a ser mas sensible en algunos patrones.
+
+**- ¿Qué aplicaciones reales tiene esta práctica?**
+
+Este análisis de variabilidad de la frecuencia del corazón se puede aplicar en áreas como salud, deporte esto debido a que por la parte de la salud se puede realizar un monitoreo cardiovascular esto con la finalidad de detectar enfermedades cardiacas o patologías y también con esto se puede realizar una evaluación al sistema nervioso autónomo. En el caso del deporte sirve para evaluar la recuperación y el estado posterior a realizar dichos entrenamientos todo con la finalidad de mejorar el rendimiento.
+
 ---
 **5. Conclusiones:**
 
