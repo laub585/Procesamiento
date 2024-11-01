@@ -122,8 +122,7 @@ A continuación, se presenta un diagrama de flujo que ilustra de manera gráfica
 
 
 
-**Figura #04. "**
-
+**Figura #04. "Diagrama de Flujo del Procedimiento"**
 
 
 **3.2   Adquisición de la señal ECG**
@@ -273,6 +272,10 @@ Siguiendo con el pre - procesamiento, para identificar los picos R en la señal 
 ![image](https://github.com/user-attachments/assets/901392cb-e2df-4b5b-bef5-136d01f3d59a)
 
 **Figura #17. Programación De la Identificación de los Picos RR .Elaboración propia**
+
+![image](https://github.com/user-attachments/assets/5d6bef9e-17d8-4453-83d7-b5e03152584c)
+
+**Figura #18. Gráfica que evidencia Picos RR en detalle de 250 a 260 segundos .Elaboración propia**
 
 Lo que sustenta el código anterior, es la detección de los picos en la señal filtrada, lo que permite calcular los intervalos R-R (tiempo entre picos consecutivos) y obtiene la media y desviación estándar de dichos intervalos, lo cual es útil para el análisis de latidos cardíacos en un ECG. Primero, crea una máscara para considerar solo los valores finitos de la señal, luego utiliza find_peaks para detectar picos con una altura mínima de 0.15. Con np.where, recupera los índices originales de estos picos, lo que ayuda a calcular los intervalos R-R en segundos multiplicando la diferencia entre índices consecutivos por el intervalo de tiempo de muestreo. Finalmente, calcula la media y desviación estándar de estos intervalos y los imprime con tres decimales, proporcionando así una medida de la regularidad de los latidos, como se muestra acontinuación:
 
