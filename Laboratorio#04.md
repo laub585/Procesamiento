@@ -113,6 +113,7 @@ En este laboratorio, haciendo uso de la tecnica del electrocardiograma(ECG) la t
   
 * **Wavelet de Coiflet:*** Wavelet con un número de momentos nulos, lo que la hace útil para aproximar funciones suaves.
 
+**Para el presente laboratorio, se hara uso del  wavelet tipo morlet ya que trabaja análizando el tiempo-frecuencia debido a su capacidad de capturar información tanto de frecuencia como de tiempo dentro de una señal**.
 
 
  **3.1.4 Diagrama de Flujo. :**
@@ -242,7 +243,28 @@ Estos datos de la señal ECG, adquiridos por la STM32 se procesan en un tiempo d
 
 **Figura #15.Adquisición de los datos del archivo txt. Elaboración propia**
 
-**3.3 Pre - Procesamiento de la Señal**
+**3.3 Pre - Procesamiento de la Señal:**
+
+Para este apartado,en el ambito del procesamiento, el filtrado consiste en la modificación intencional del espectro de frecuencia de una señal. Esto implica alterar la amplitud de los diferentes componentes frecuenciales que conforman la señal original. Es decir, se seleccionan o eliminan ciertas frecuencias de una señal, con el objetivo de resaltar o atenuar determinadas características.
+
+Para este apartado se hizo uso de filtros digitales como algoritmos matemáticos que operan sobre señales digitales (representadas como una secuencia de números). Su función principal es modificar el espectro de frecuencia de una señal, atenuando ciertos componentes y dejando pasar otros.
+
+En este laboratorio, se trabajo haciendo uso de filtros IIR (Respuesta Impulsional Infinita), este se utiliza teniendo en cuenta las muestras actuales como las pasadas de una señal de entrada para calcular la salida lo que representa la respuesta del filtro a un impulso (una señal que es cero en todas partes excepto en un solo punto) continúa indefinidamente en el tiempo.
+
+En primera instancia se hace uso de un filtro IIR (Butterworth) Pasa - Banda que permite el paso de señales dentro de un rango específico de frecuencias, mientras que atenúa las señales fuera de ese rango.
+
+* **¿Cómo Funciona?**
+  
+1.  Se hizo selección de una banda de frecuencia de interés, delimitada por una frecuencia de corte inferior (65HZ) y una frecuencia de corte superior (200hz).
+
+2.  
+3. 
+4.  
+
+![image](https://github.com/user-attachments/assets/709f61ff-baa6-4578-9f12-6953d301d977)
+
+![image](https://github.com/user-attachments/assets/fe04e4e8-9df8-4421-9925-b3581cacce7c)
+
 
 
 ----
