@@ -29,6 +29,8 @@ class principal(QMainWindow):
         self.ax = self.fig.add_subplot(111)
         self.ax.set_xlim(0, 10)
         self.ax.set_ylim(-1500, 1500)
+        self.ax.set_xlabel("Tiempo (s)")  # Título del eje X
+        self.ax.set_ylabel("Amplitud")  # Título del eje Y
         self.canvas = FigureCanvas(self.fig)
         layout = QVBoxLayout()
         layout.addWidget(self.canvas)
@@ -38,23 +40,16 @@ class principal(QMainWindow):
         self.ax1 = self.fig1.add_subplot(111)
         self.ax1.set_xlim(0, 10)
         self.ax1.set_ylim(-100, 10000)
+        self.ax1.set_xlabel("Tiempo (s)")  # Título del eje X
+        self.ax1.set_ylabel("Amplitud Normalizada")  # Título del eje Y
         self.canvas1 = FigureCanvas(self.fig1)
         layout1 = QVBoxLayout()
         layout1.addWidget(self.canvas1)
         self.FILTRO.setLayout(layout1)
 
-        self.fig2 = Figure()
-        self.ax2 = self.fig2.add_subplot(111)
-        self.ax2.set_xlim(0, 10)
-        self.ax2.set_ylim(-100, 10000)
-        self.canvas2 = FigureCanvas(self.fig2)
-        layout2 = QVBoxLayout()
-        layout2.addWidget(self.canvas2)
-        self.ventana.setLayout(layout2)
-
         self.fm = 1000  # Frecuencia de muestreo (muestras por segundo)
-        self.fc_alta = 20  # Frecuencia de corte alta
-        self.fc_baja = 30  # Frecuencia de corte baja
+        self.fc_alta = 50  # Frecuencia de corte alta
+        self.fc_baja = 450  # Frecuencia de corte baja
         self.fn_alta = self.fc_alta / (0.5 * self.fm)
         self.fn_baja = self.fc_baja / (0.5 * self.fm)
         self.orden = 4
@@ -64,7 +59,7 @@ class principal(QMainWindow):
 
         self.data_storage = []  # Almacena las últimas 60 segundos de datos
         self.time_counter = 0  # Contador de tiempo acumulado
-        self.time_precision = 6  # Cifras significativas para evitar repeticiones en los tiempos
+        self.time_precision = 7  # Cifras significativas para evitar repeticiones en los tiempos
 
     def puertos_disponibles(self):
         p = serial.tools.list_ports.comports()
@@ -130,8 +125,8 @@ class principal(QMainWindow):
                     # Agregar el último valor a data_storage con tiempo no repetido
                     self.data_storage.append((time_rounded, self.y[-1]))
 
-                    # Mantener solo los últimos 60 segundos de datos
-                    if len(self.data_storage) > 60 * self.fm:  # 60 segundos
+                    # Mantener solo los últimos 300 segundos de datos
+                    if len(self.data_storage) > 300 * self.fm:  # 300 segundos
                         self.data_storage.pop(0)  # Elimina el más antiguo
                     
                 dfH = filtfilt(self.b, self.a, self.y)
@@ -145,6 +140,8 @@ class principal(QMainWindow):
                     self.ax.plot(self.x, dfH)
                     self.ax.set_xlim(0, 10)  # Establecer los límites del eje x
                     self.ax.set_ylim(-1500, 1500)  # Establecer los límites del eje y
+                    self.ax.set_xlabel("Tiempo (s)")  # Título del eje X
+                    self.ax.set_ylabel("Amplitud")  # Título del eje Y
                     self.ax.grid(True)
                     self.canvas.draw()
 
@@ -152,15 +149,11 @@ class principal(QMainWindow):
                     self.ax1.plot(self.x, dfL_normalizada)
                     self.ax1.set_xlim(0, 10)  # Establecer los límites del eje x
                     self.ax1.set_ylim(0, 2)  # Establecer los límites del eje y
+                    self.ax1.set_xlabel("Tiempo (s)")  # Título del eje X
+                    self.ax1.set_ylabel("Amplitud Normalizada")  # Título del eje Y
                     self.ax1.grid(True)
                     self.canvas1.draw()
-                    
-                    self.ax2.clear()
-                    self.ax2.plot(self.x, dfL_normalizada * windows.hamming(len(self.y)))
-                    self.ax2.set_xlim(0, 10)  
-                    self.ax2.set_ylim(0, 2) 
-                    self.ax2.grid(True)
-                    self.canvas2.draw()
+              
 
             if not self.stop_event_ser.is_set():
                 threading.Timer(1e-3, self.periodic_thread).start()
