@@ -284,12 +284,15 @@ Lo que sustenta el código anterior, es la detección de los picos en la señal 
 
 **Figura #18. Resultados de lo valores de la media y desviación estandar Picos RR .Elaboración propia**
 
+**3.4 Análisis de la HRV en el dominio del tiempo**
+
 Con los resultados de la media de los intervalos RR, se muestra como un parámetro clave en electrocardiografía que permite evaluar tanto la frecuencia cardíaca como la variabilidad de la frecuencia cardíaca. Se calcula como la media de los tiempos entre dos picos R consecutivos. En nuestro análisis, la media de los intervalos RR fue de 0,634 segundos lo que equivale en 664 milisegundos, lo que indica el tiempo promedio que transcurre entre dos latidos consecutivos del corazón como se representa a continuación.
 
 ![image](https://github.com/user-attachments/assets/2b96908d-eb01-425c-a057-f02ecc48e73c)
 
-En cuanto a la desviación estandar, esta logra representar  los intervalos RR cuantifica la variabilidad en los tiempos entre latidos consecutivos, proporcionando un indicador de la estabilidad del ritmo cardíaco.
+En cuanto a la desviación estandar, esta logra representar  los intervalos RR cuantifica la variabilidad en los tiempos entre latidos consecutivos, proporcionando un indicador de la estabilidad del ritmo cardíaco, en este caso la equivalencia de  36,2 ms en los intervalos RR proporciona información valiosa sobre la regularidad del ritmo cardíaco y la influencia del sistema nervioso autónomo. 
 
+El análisis,
 
 
 ----
