@@ -123,7 +123,7 @@ En este laboratorio, haciendo uso de la tecnica del electrocardiograma(ECG) la t
  
 A continuación, se presenta un diagrama de flujo que ilustra de manera gráfica y secuencial el proceso practico del presente laboratorio.
 
-
+![Doc2](https://github.com/user-attachments/assets/16d1614a-c1b2-4cda-ac2a-f8df305359d6)
 
 **Figura #04. "Diagrama de Flujo del Procedimiento"**
 
@@ -179,7 +179,9 @@ Un sistema de adquisición de datos (DAQ) es esencial para capturar, procesar y 
 
 * **Componentes Clave de un Sistema DAQ para la Electrocardiográfia (ECG):**
 
-1. **Electrodos:** El electrodo es usado como el  conductor eléctrico que establece contacto con un material no metálico en un circuito. Es como un puente que permite que la corriente eléctrica fluya entre un circuito eléctrico y otro medio.
+1. **Electrodos:**
+
+El electrodo es usado como el  conductor eléctrico que establece contacto con un material no metálico en un circuito. Es como un puente que permite que la corriente eléctrica fluya entre un circuito eléctrico y otro medio.
 
 En la técnica del electrocardiograma (ECG) se utilizan electrodos para detectar las señales eléctricas producidas por el corazón. Estos electrodos se colocan en la superficie de la piel, haciendo de esta una técnica no invasiva y segura para el paciente. La colocación de estos electrodos es relativamente sencilla y permite registrar la actividad eléctrica del corazón desde diferentes ángulos, proporcionando así una imagen completa de su funcionamiento en nuestro caso de V1 y V2 .
 
@@ -189,13 +191,17 @@ La función principal de los electrodos en el ECG es captar y amplificar las dé
 
 **Figura #08.Electrodos de Superficie. Extraida de Oxdea**
 
-2. **Microcontrolador STM32:** El uso del microcontrolador stm32, fue útil ya que mediante este se  toma la adquisición de la señal es aqui donde se  configuraron los pines necesarios  para leer datos del sensor AD8232 de electromiográfia, logrando la comunicación entre la respuesta y la interfaz.
+2. **Microcontrolador STM32:**
+
+El uso del microcontrolador stm32, fue útil ya que mediante este se  toma la adquisición de la señal es aqui donde se  configuraron los pines necesarios  para leer datos del sensor AD8232 de electromiográfia, logrando la comunicación entre la respuesta y la interfaz.
 
 ![image](https://github.com/user-attachments/assets/3ed47807-bcd5-4c81-9b78-a7f8dc9c021c)
 
 **Figura #09.Periferico Programado desde la STM32. Extraida de CUBEID**
 
-3. **Sensor AD8232:** El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales ECG, Este  incorpora amplificadores de instrumentación, filtros y otras características que lo hacen ideal para amplificar y limpiar las señales eléctricas débiles del corazón. Al actuar como preprocesador, el AD8232 prepara la señal ECG para su digitalización y posterior análisis, permitiendo obtener información precisa sobre el ritmo cardíaco, la conducción eléctrica y la estructura del corazón. Su alta ganancia, alta impedancia de entrada y bajo ruido lo convierten en una elección popular para la construcción de circuitos de ECG.
+3. **Sensor AD8232:**
+
+El AD8232 es un amplificador operacional de instrumentación especialmente diseñado para la adquisición de señales ECG, Este  incorpora amplificadores de instrumentación, filtros y otras características que lo hacen ideal para amplificar y limpiar las señales eléctricas débiles del corazón. Al actuar como preprocesador, el AD8232 prepara la señal ECG para su digitalización y posterior análisis, permitiendo obtener información precisa sobre el ritmo cardíaco, la conducción eléctrica y la estructura del corazón. Su alta ganancia, alta impedancia de entrada y bajo ruido lo convierten en una elección popular para la construcción de circuitos de ECG.
 
 ![image](https://github.com/user-attachments/assets/bcd1edc9-e59e-4703-a961-0cc06f443f42)
 
